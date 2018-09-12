@@ -30,6 +30,11 @@
     background-image: url("imagenes_nosotros/portadaM.png");
   }
 }
+@media only screen and (min-width: 1200px) {
+  .portada {
+    background-image: url("imagenes_nosotros/portadaL.png");
+  }
+}
 .portada .sub-portada {
   height: 375px;
   background-image: url("imagenes_nosotros/cascos.png");
@@ -112,7 +117,7 @@
 
 /* boton */
 /* DIMENSIONES DEL LOGO Y MENU IPAD */
-@media only screen and (min-width: 768px) and (max-width: 1100px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   .logo {
     width: 8rem;
   }
@@ -234,6 +239,47 @@ i.fab:hover {
   background: #929292;
 }
 
+.filaXL {
+  display: flex;
+}
+.filaXL .columnaXL:nth-child(1) {
+  flex: 50%;
+  align-content: flex-end;
+}
+.filaXL .columnaXL:nth-child(2) {
+  flex: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: oratorstd;
+  color: white;
+  font-size: 2vw;
+  padding-top: 14vw;
+}
+.filaXL .contenedor-cascos {
+  padding-top: 2rem;
+  width: 85%;
+  margin-left: 15%;
+}
+
+.portadaXL {
+  display: none;
+}
+
+.portada-fondo {
+  background-image: url("imagenes_nosotros/portadaL.png");
+  background-size: cover;
+}
+
+@media only screen and (min-width: 1100px) {
+  .portada {
+    display: none;
+  }
+
+  .portadaXL {
+    display: block;
+  }
+}
 .fila {
   display: flex;
   flex-wrap: wrap;
@@ -480,6 +526,142 @@ i.fab:hover {
   #manosS {
     display: none;
   }
+}
+footer {
+  background-color: #333333ff;
+  font-family: gothamlight;
+}
+
+.footer-movil {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #333333ff;
+  height: 259px;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-blanco {
+  background-image: url("logo-dispreh.svg");
+  width: 8rem;
+  height: 90px;
+  /* margin: 2rem, 2rem; */
+  margin-top: 1.73rem;
+  padding-bottom: 5.2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+a i {
+  padding-top: 2.8rem;
+}
+
+.footer-movil a {
+  color: white;
+}
+
+.letra {
+  transform: rotate(-45deg);
+}
+
+#grande {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #grande {
+    display: block;
+  }
+
+  .footer-movil {
+    display: none;
+  }
+}
+.arriba {
+  display: flex;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 2rem;
+  font-family: oratorstd;
+}
+.arriba .iconos-footer {
+  flex: 43%;
+}
+.arriba .iconos-footer a {
+  padding-right: 1rem;
+}
+.arriba .flecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 40%;
+}
+.arriba .flecha .fas {
+  color: white;
+}
+.arriba .enlaces {
+  display: flex;
+  flex: 43%;
+  justify-content: space-between;
+}
+.arriba .enlaces a {
+  color: white;
+  padding-right: 1.3rem;
+}
+
+.recibe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00A1BB;
+  margin-top: 2rem;
+}
+
+.abajo {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-bottom: 2rem;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.ingresa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.ingresa input[type=text] {
+  background: transparent;
+  letter-spacing: 3px;
+  width: 44%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  color: white;
+  border-bottom: 1px solid white;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+.estimado {
+  background-image: url("logo-dispreh.svg");
+  width: 11rem;
+  height: 70px;
+  /* margin: 2rem, 2rem; */
+  margin-left: 1rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=nosotros.css.map */
