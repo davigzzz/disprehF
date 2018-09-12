@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@font-face {
+  font-family: oratorstd;
+  src: url("fuentes/OratorStd.otf") format("opentype");
+}
+@font-face {
+  font-family: gothamlight;
+  src: url("fuentes/Gotham-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: gothamBook;
+  src: url("fuentes/Gotham Book Regular.otf");
+}
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+.portada {
+  height: 1341px;
+  background-image: url("imagenes_nosotros/portadaS.png");
+  background-size: cover;
+}
+.portada .sub-portada {
+  height: 1154px;
+  background-image: url("imagenes_nosotros/cascos.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3rem;
+}
+.portada .sub-portada p {
+  color: white;
+  font-size: 85px;
+  text-align: center;
+  font-family: oratorstd;
+  margin-right: 3rem;
+  margin-bottom: 15rem;
+}
+
+/* MENU *************************************************/
+/* BARRA DE NAVEGACION */
+.topnav {
+  font-family: oratorstd;
+  justify-content: space-between;
+  display: flex;
+  overflow: hidden;
+  background-color: transparent;
+  height: 240px;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  color: #00A1BB;
+}
+.topnav a .active {
+  color: #00A1BB;
+}
+
+/* desaparecerlo en movil */
+.topnav-right {
+  display: none;
+}
+
+/* LOGO */
+.logo {
+  background-image: url("logo-dispreh.svg");
+  width: 11rem;
+  height: 70px;
+  /* margin: 2rem, 2rem; */
+  margin-top: 3.3rem;
+  margin-left: 3rem;
+  padding-bottom: 2.2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+/* BOTON DE MENU */
+/* contenedor */
+.btn-menu {
+  margin: 1rem 2rem;
+  padding-top: 1.3rem;
+}
+
+/* boton */
+/* DIMENSIONES DEL LOGO Y MENU IPAD */
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  .logo {
+    width: 8rem;
+  }
+
+  .btn-menu {
+    padding-top: 2rem;
+  }
+}
+/* DESAPARECER MENU Y MOSTRAR BARRA DE NAVEGACION */
+@media only screen and (min-width: 1100px) {
+  .btn-menu {
+    display: none;
+  }
+
+  .topnav-right {
+    display: block;
+    float: right;
+    padding-top: 2.2rem;
+    padding-right: 2rem;
+  }
+
+  .logo {
+    width: 8rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+
+  .iconos a {
+    padding-top: 1.65rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+}
+/* @media only screen and (min-width: 1300px){
+    .topnav-right{
+        padding-top: 3.65rem;
+    }
+} */
+/* MENU Y SU ANIMACION */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #28324D;
+  background-color: #28324D;
+  overflow-x: hidden;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.overlay .closebtn {
+  position: absolute;
+  right: 0px;
+  font-size: 60px;
+  padding-right: 20px;
+}
+.overlay .iconos-menu {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.overlay .iconos-menu .fa-1x {
+  font-size: 0.6em;
+}
+.overlay .iconos-menu {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.overlay .overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay .overlay-content a .active {
+  color: #929292;
+}
+.overlay .overlay-content a:hover {
+  color: #929292;
+}
+.overlay .overlay-content a:focus {
+  color: #929292;
+}
+
+/* TAMAÑO DE BOTON DE CERRADO DEL MENU */
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .overlay .closebtn {
+    position: absolute;
+    right: 45px;
+    font-size: 80px;
+  }
+}
+/* Encerrar iconos en círculos */
+i.fab {
+  /* margin: 0.5em; */
+  color: white;
+  border: 1px solid #929292;
+  border-radius: 50%;
+  padding: 0.5em;
+  transition: all 0.5s ease;
+  width: 2.1em;
+  text-align: center;
+}
+i.fab:hover {
+  background: #929292;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fila .columna2 {
+  font-family: gothamLight;
+  font-size: 34.07px;
+  flex: 100%;
+}
+.fila .columna2:nth-child(1) {
+  letter-spacing: 3px;
+}
+.fila .columna2:nth-child(1) p {
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 6rem;
+}
+.fila .columna2 .contenedor-datos {
+  font-family: gothamLight;
+  border: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  margin: 3%;
+  font-size: 12px;
+}
+.fila .columna2 .contenedor-datos p {
+  padding-left: 9%;
+  align-content: space-between;
+  padding-top: 2rem;
+  font-size: 2.3rem;
+  letter-spacing: 3px;
+}
+.fila .columna2 .contenedor-datos p:last-child {
+  padding-bottom: 2rem;
+}
+.fila .columna2 .contenedor-datos b {
+  color: #00A1BB;
+}
+.fila .columna2:nth-child(2) {
+  background-color: #333333ff;
+}
+
+#titulo {
+  font-size: 68.74px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-family: Raleway;
+}
+
+/*# sourceMappingURL=nosotros.css.map */
