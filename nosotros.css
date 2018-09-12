@@ -372,10 +372,6 @@ i.fab:hover {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .salto {
-    display: none;
-  }
-
   #tel-ipad {
     display: none;
   }
