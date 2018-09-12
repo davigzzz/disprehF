@@ -25,6 +25,11 @@
   background-image: url("imagenes_nosotros/portadaS.png");
   background-size: cover;
 }
+@media only screen and (min-width: 600px) {
+  .portada {
+    background-image: url("imagenes_nosotros/portadaM.png");
+  }
+}
 .portada .sub-portada {
   height: 375px;
   background-image: url("imagenes_nosotros/cascos.png");
@@ -35,12 +40,23 @@
   justify-content: center;
   margin-left: 2rem;
 }
+@media only screen and (min-width: 600px) {
+  .portada .sub-portada {
+    background-image: url("imagenes_nosotros/cascosM.png");
+    justify-content: flex-end;
+  }
+}
 .portada .sub-portada p {
   color: white;
   font-size: 28px;
   text-align: center;
   font-family: oratorstd;
   margin-right: 2rem;
+}
+@media only screen and (min-width: 600px) {
+  .portada .sub-portada p {
+    margin-right: 1rem;
+  }
 }
 
 /* MENU *************************************************/
@@ -228,12 +244,20 @@ i.fab:hover {
   flex: 100%;
   text-align: justify;
 }
+@media only screen and (min-width: 1200px) {
+  .fila .columna2 {
+    flex: 50%;
+  }
+}
 .fila .columna2:nth-child(1) p {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
   padding-bottom: 33px;
+}
+@media only screen and (min-width: 600px) {
+  .fila .columna2:nth-child(1) p {
+    margin: 3rem;
+    letter-spacing: 3px;
+  }
 }
 .fila .columna2 .contenedor-datos {
   font-family: gothamLight;
@@ -243,6 +267,7 @@ i.fab:hover {
   color: white;
   margin: 3%;
   font-size: 12px;
+  padding-top: 1.7rem;
 }
 .fila .columna2 .contenedor-datos p {
   padding-left: 20px;
@@ -250,6 +275,12 @@ i.fab:hover {
   padding-top: 1rem;
   font-size: 0.9rem;
   letter-spacing: 3px;
+}
+@media only screen and (min-width: 600px) {
+  .fila .columna2 .contenedor-datos p {
+    padding-left: 37px;
+    padding-right: 1.3rem;
+  }
 }
 .fila .columna2 .contenedor-datos p:last-child {
   padding-bottom: 2rem;
@@ -269,9 +300,52 @@ i.fab:hover {
   font-family: Raleway;
 }
 
+#tel-normal {
+  display: block;
+}
+
+#tel-ipad {
+  display: none;
+}
+
+.salto {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .salto {
+    display: block;
+  }
+
+  #tel-ipad {
+    display: block;
+  }
+
+  #tel-normal {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .salto {
+    display: none;
+  }
+
+  #tel-ipad {
+    display: none;
+  }
+
+  #tel-normal {
+    display: block;
+  }
+}
 .contactamos {
   font-family: gothamlight;
   height: 150px;
+}
+@media only screen and (min-width: 600px) {
+  .contactamos {
+    height: auto;
+  }
 }
 .contactamos h1 {
   font-size: 28.74px;
@@ -280,11 +354,24 @@ i.fab:hover {
   padding: 1rem;
   font-family: Raleway;
 }
+@media only screen and (min-width: 600px) {
+  .contactamos h1 {
+    padding: 0;
+    margin: 3rem;
+  }
+}
 .contactamos p {
   font-size: 14.07px;
   padding: 1rem;
   padding-top: 0;
   text-align: justify;
+}
+@media only screen and (min-width: 600px) {
+  .contactamos p {
+    padding: 0;
+    margin: 3rem;
+    letter-spacing: 3px;
+  }
 }
 
 .fila3 {
@@ -294,6 +381,12 @@ i.fab:hover {
 .fila3 .columna:nth-child(1) {
   order: 2;
   flex: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .fila3 .columna:nth-child(1) {
+    flex: 50%;
+    order: 1;
+  }
 }
 .fila3 .columna:nth-child(2) {
   order: 1;
@@ -334,6 +427,23 @@ i.fab:hover {
   color: #333333ff;
   background-color: #00A1BB;
 }
+@media only screen and (min-width: 600px) {
+  .fila3 .columna:nth-child(2) {
+    flex: 50%;
+    order: 2;
+  }
+  .fila3 .columna:nth-child(2) input[type=text] {
+    margin: 0;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .fila3 .columna:nth-child(2) input[type=text] {
+    margin-bottom: 3.5rem;
+    font-size: 1rem;
+  }
+}
 .fila3 .columna .a {
   display: flex;
   align-items: center;
@@ -356,6 +466,20 @@ i.fab:hover {
 }
 .fila3 .columna .terms span {
   font-family: gothamlight;
+}
+
+#manosML {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #manosML {
+    display: block;
+  }
+
+  #manosS {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=nosotros.css.map */

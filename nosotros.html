@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
@@ -76,76 +76,82 @@
             </div>
         </div>
         <div class="sub-portada">
-            <p>NUESTRA CALIDAD<br>NOS DISTINGUE</p>
+            <p>NUESTRA CALIDAD
+                <br>NOS DISTINGUE</p>
         </div>
     </div>
 
     <div class="fila">
         <div class="columna2">
             <p id="titulo"> ¿Nos contactas? </p>
-            <p>Para cualquier duda o consultoria, por favor contáctanos por el medio que gustes. Nuestro horario de atención
-                es de 9:00 a 19:00 horas de lunes a viernes.
+            <p>Para cualquier duda o consultoria, por favor contáctanos
+                <br class="salto"> por el medio que gustes. Nuestro horario de atención
+                <br class="salto"> es de 9:00 a 19:00 horas de lunes a viernes.
             </p>
         </div>
         <div class="columna2">
             <div class="contenedor-datos">
                 <p>
                     <b>cel.</b> 771-143-5464</p>
-                <p>
+                <p id="tel-normal">
                     <b>tel.</b> (771) 71 377 15
                     <br> &emsp;&nbsp;&nbsp; (771) 71 947 65</p>
-                <p>
-                    <b>dir.</b> Av Rojo Gómez, no. 511 - C Col. Santa Julia, Pachuca Hgo</p>
-                <p>
-                    <b>mail.</b> contacto@dispreh.com.mx</p>
-                <p>
-                    <b>mail.</b> ventas@dispreh.com.mx</p>
+                
+                    <p id="tel-ipad">
+                        <b>tel.</b> (771) 71 377 15 | (771) 71 947 65</p>
+                    <p>
+                        <b>dir.</b> Av Rojo Gómez, no. 511 - C Col. Santa Julia, Pachuca Hgo</p>
+                    <p>
+                        <b>mail.</b> contacto@dispreh.com.mx</p>
+                    <p>
+                        <b>mail.</b> ventas@dispreh.com.mx</p>
             </div>
         </div>
     </div>
 
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14986.161142451652!2d-98.75838!3d20.1114952!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x950892a843e97b80!2sDistribuidora+de+Prefabricaciones+S.A.+de+C.V.!5e0!3m2!1sen!2smx!4v1536737831129" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>    
-    
-    <div class="contactamos">
-            <h1>¿Te contactamos?</h1>
-            <p>Si lo prefieres, nosotros nos ponemos en contacto contigo. Regálenos los siguientes datos y te contactamos a la brevedad</p>
-        </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14986.161142451652!2d-98.75838!3d20.1114952!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x950892a843e97b80!2sDistribuidora+de+Prefabricaciones+S.A.+de+C.V.!5e0!3m2!1sen!2smx!4v1536737831129"
+        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-        <div class="fila3">
-                <div class="columna">
-                    <img src="imagenes_nosotros/manosS.png" alt="mano" class="img-fluid">
+    <div class="contactamos">
+        <h1>¿Te contactamos?</h1>
+        <p>Si lo prefieres, nosotros nos ponemos en contacto contigo. <br class="salto"> Regálenos los siguientes datos y te contactamos a la brevedad</p>
+    </div>
+
+    <div class="fila3">
+        <div class="columna">
+            <img src="imagenes_nosotros/manosS.png" alt="mano" class="img-fluid" id="manosS">
+            <img src="imagenes_nosotros/manosML.png" alt="manos" class="img-fluid" id="manosML">
+        </div>
+        <div class="columna">
+            <form action="/forma.php" class="formulario">
+                <div class="b">
+                    <input type="text" name="nombre" placeholder="Nombre*">
+                    <br>
+
+                    <input type="text" name="apellido" placeholder="Apellido">
+                    <br>
+
+                    <input type="text" name="correo" id="" placeholder="Correo E.*">
+                    <br>
+
+                    <input type="text" name="telefono" id="" placeholder="Teléfono">
+                    <br>
+                    <br>
+
                 </div>
-                <div class="columna">
-                    <form action="/forma.php" class="formulario">
-                        <br>
-                        <div class="b">
-                            <input type="text" name="nombre" placeholder="Nombre*">
-                            <br>
-                            
-                            <input type="text" name="apellido" placeholder="Apellido">
-                            <br>
-                            
-                            <input type="text" name="correo" id="" placeholder="Correo E.*">
-                            <br>
-                            
-                            <input type="text" name="telefono" id="" placeholder="Teléfono">
-                            <br>
-                            <br>
-        
-                        </div>
-                        <div class="terms">
-                            <i class="far fa-circle"></i>
-                            <span>&nbsp;&nbsp;ACEPTO TÉRMINOS Y CONDICIONES
-                            </span>
-                        </div>
-                        <div class="a">
-                            <input type="submit" value="ENVIAR">
-                        </div>
-                    </form>
+                <div class="terms">
+                    <i class="far fa-circle"></i>
+                    <span>&nbsp;&nbsp;ACEPTO TÉRMINOS Y CONDICIONES
+                    </span>
                 </div>
-            </div>
-    
+                <div class="a">
+                    <input type="submit" value="ENVIAR">
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script>
         function openNav() {
             document.getElementById("myNav").style.width = "100%";
