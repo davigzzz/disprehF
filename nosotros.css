@@ -21,27 +21,25 @@
 }
 
 .portada {
-  height: 1341px;
+  height: 493px;
   background-image: url("imagenes_nosotros/portadaS.png");
   background-size: cover;
 }
 .portada .sub-portada {
-  height: 1154px;
+  height: 375px;
   background-image: url("imagenes_nosotros/cascos.png");
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 .portada .sub-portada p {
   color: white;
-  font-size: 85px;
+  font-size: 28px;
   text-align: center;
   font-family: oratorstd;
-  margin-right: 3rem;
-  margin-bottom: 15rem;
 }
 
 /* MENU *************************************************/
@@ -52,7 +50,7 @@
   display: flex;
   overflow: hidden;
   background-color: transparent;
-  height: 240px;
+  height: 120px;
 }
 .topnav a {
   float: left;
@@ -77,11 +75,11 @@
 /* LOGO */
 .logo {
   background-image: url("logo-dispreh.svg");
-  width: 11rem;
+  width: 4rem;
   height: 70px;
   /* margin: 2rem, 2rem; */
-  margin-top: 3.3rem;
-  margin-left: 3rem;
+  margin-top: 1.3rem;
+  margin-left: 2rem;
   padding-bottom: 2.2rem;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -223,17 +221,14 @@ i.fab:hover {
 }
 .fila .columna2 {
   font-family: gothamLight;
-  font-size: 34.07px;
+  font-size: 14.07px;
   flex: 100%;
 }
-.fila .columna2:nth-child(1) {
-  letter-spacing: 3px;
-}
 .fila .columna2:nth-child(1) p {
-  margin-top: 3rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-bottom: 6rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 .fila .columna2 .contenedor-datos {
   font-family: gothamLight;
@@ -245,10 +240,10 @@ i.fab:hover {
   font-size: 12px;
 }
 .fila .columna2 .contenedor-datos p {
-  padding-left: 9%;
+  padding-left: 20px;
   align-content: space-between;
-  padding-top: 2rem;
-  font-size: 2.3rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 3px;
 }
 .fila .columna2 .contenedor-datos p:last-child {
@@ -262,10 +257,99 @@ i.fab:hover {
 }
 
 #titulo {
-  font-size: 68.74px;
-  margin-top: 3rem;
+  font-size: 28.74px;
+  margin-top: 2.5rem;
   margin-bottom: 1rem;
   font-family: Raleway;
+}
+
+.contactamos {
+  font-family: gothamlight;
+  height: 150px;
+}
+.contactamos h1 {
+  font-size: 28.74px;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding: 1rem;
+  font-family: Raleway;
+}
+.contactamos p {
+  font-size: 14.07px;
+  padding: 1rem;
+  padding-top: 0;
+  text-align: justify;
+}
+
+.fila3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fila3 .columna:nth-child(1) {
+  order: 2;
+  flex: 100%;
+}
+.fila3 .columna:nth-child(2) {
+  order: 1;
+  flex: 100%;
+}
+.fila3 .columna:nth-child(2) input[type=text] {
+  letter-spacing: 3px;
+  width: 80%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  color: #d9dddf;
+  border-bottom: 1px solid #78797c;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.fila3 .columna:nth-child(2) input[type=submit] {
+  align-items: center;
+  align-content: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  /* margin-left: 35%; */
+  border: 1px solid;
+  border-color: #333333ff;
+  color: #00A1BB;
+  background: transparent;
+  cursor: pointer;
+  font-family: gothamlight;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  transition: all 0.5s ease;
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.fila3 .columna:nth-child(2) input[type=submit]:hover {
+  border-color: #00A1BB;
+  color: #333333ff;
+  background-color: #00A1BB;
+}
+.fila3 .columna .a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fila3 .columna .b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.fila3 .columna .terms {
+  font-family: gothamlight;
+  display: flex;
+  font-size: 12.37px;
+  text-align: center;
+  font-family: gothamlight;
+  align-items: center;
+  justify-content: center;
+}
+.fila3 .columna .terms span {
+  font-family: gothamlight;
 }
 
 /*# sourceMappingURL=nosotros.css.map */
