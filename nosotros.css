@@ -304,6 +304,11 @@ i.fab:hover {
   font-size: 12px;
   padding-top: 1.7rem;
 }
+@media only screen and (min-width: 1200px) {
+  .fila .columna2 .contenedor-datos {
+    margin: 2%;
+  }
+}
 .fila .columna2 .contenedor-datos p {
   padding-left: 20px;
   align-content: space-between;
@@ -319,6 +324,9 @@ i.fab:hover {
 }
 .fila .columna2 .contenedor-datos p:last-child {
   padding-bottom: 2rem;
+}
+.fila .columna2 .contenedor-datos p a {
+  color: white;
 }
 .fila .columna2 .contenedor-datos b {
   color: #00A1BB;
@@ -346,12 +354,18 @@ i.fab:hover {
 .salto {
   display: none;
 }
-
 @media only screen and (min-width: 600px) {
   .salto {
     display: block;
   }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1310px) {
+  .salto {
+    display: none;
+  }
+}
 
+@media only screen and (min-width: 600px) {
   #tel-ipad {
     display: block;
   }
@@ -384,6 +398,7 @@ i.fab:hover {
   padding-left: 1rem;
   padding: 1rem;
   font-family: Raleway;
+  margin-top: 3rem;
 }
 @media only screen and (min-width: 600px) {
   .contactamos h1 {
@@ -535,11 +550,10 @@ footer {
 
 .logo-blanco {
   background-image: url("logo-dispreh.svg");
-  width: 8rem;
-  height: 90px;
+  width: 4rem;
   /* margin: 2rem, 2rem; */
-  margin-top: 1.73rem;
-  padding-bottom: 5.2rem;
+  margin-top: 4.73rem;
+  padding-bottom: 3.2rem;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -560,7 +574,7 @@ a i {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   #grande {
     display: block;
   }
