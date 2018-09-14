@@ -13,221 +13,178 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="nosotros.js"></script>
+    <script src="contacto.js"></script>
     <!-- Estilo custom -->
     <link rel="stylesheet" href="nosotros.css">
     <!-- Fontawesome (íconos) -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
 
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="g824.png">
     <title>Dispreh</title>
 </head>
 
 <body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#" class="active">nosotros</a>
+            <a href="#">productos</a>
+            <a href="#">contacto</a>
+            <a href="#">dispreh</a>
+            <div class="iconos-menu">
+                <a href="">
+                    <i class="fab fa-facebook-f fa-1x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-google-plus-g fa-1x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-linkedin-in fa-1x"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="topnav">
+        <a href="#" class="logo"></a>
+        <div class="topnav-right">
+            <a href="#" class="active">nosotros</a>
+            <a href="#">productos</a>
+            <a href="index.html">contacto</a>
+            <a href="#">dispreh</a>
+            <span class="iconos">
+                <a href="">
+                    <i class="fab fa-facebook-f fa-1.5x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-google-plus-g fa-1.5x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-linkedin-in fa-1.5x"></i>
+                </a>
+
+            </span>
+
+
+
+        </div>
+        <div class="btn-menu">
+            <i class="fas fa-bars fa-2x" onclick="openNav()"></i>
+        </div>
+    </div>
+
     <div class="portada">
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="nosotros.html">nosotros</a>
-                <a href="#">productos</a>
-                <a href="#" class="active">contacto</a>
-                <a href="#">dispreh</a>
-                <div class="iconos-menu">
-                    <a href="">
-                        <i class="fab fa-facebook-f fa-1x"></i>
-                    </a>
-                    <a href="">
-                        <i class="fab fa-google-plus-g fa-1x"></i>
-                    </a>
-                    <a href="">
-                        <i class="fab fa-linkedin-in fa-1x"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- header -->
-        <div class="topnav">
-            <a href="#" class="logo"></a>
-            
-            <div class="btn-menu">
-                <img src="icono-menu.png" alt="menu" onclick="openNav()">
-                <!-- <i class="fas fa-bars fa-2x" onclick="openNav()"></i> -->
-            </div>
-        </div>
-        <div class="sub-portada">
-            <p>NUESTRA CALIDAD
-                <br>NOS DISTINGUE</p>
-        </div>
+        <img src="imagenes_nosotros/portadaS.png" alt="calidad" class="img-fluid">
     </div>
 
-    <div class="portadaXL">
-            <div class="portada-fondo">
-                <!-- header -->
-                <div class="topnav">
-                    <a href="#" class="logo"></a>
-                    <div class="topnav-right">
-                            <a href="nosotros.html">nosotros</a>
-                            <a href="#">productos</a>
-                            <a href="#" class="active">contacto</a>
-                            <a href="#">dispreh</a>
-                            <span class="iconos">
-                                <a href="">
-                                    <i class="fab fa-facebook-f fa-1.5x"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fab fa-google-plus-g fa-1.5x"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fab fa-linkedin-in fa-1.5x"></i>
-                                </a>
-        
-                            </span>
-                    </div>
-                </div>
-    
-                <div class="filaXL">
-                    <div class="columnaXL">
-                        <div class="contenedor-cascos">
-                            <img src="imagenes_nosotros/cascosXL2.png" alt="cascos" class="img-fluid" id="cascos">
-                        </div>
-                    </div>
-                    <div class="columnaXL">
-                        NUESTRA CALIDAD NOS DISTINGUE
-                    </div>
-                </div>
-    
-            </div>
-        </div>
+    <div class="seccion1">
+        <h1>
+            <b>La mejor empresa de</b> prefabricados del centro de México</h1>
+        <p>
+            Empresa 100% Hidalguense con más de 20 años de experiencia en el mercado, un experimentado equipo de profesionales y los
+            valores que nos impulsan, estamos dedicados a desarrollar,
+        </p>
+        <img src="imagenes_nosotros/ladrillos.png" alt="ladrillos" class="img-fluid">
+        <p>
+            fabricar, distribuir, proyectar y construir materiales prefabricado de alta calidad con nuestras dos plantas en el estado
+            de Hidalgo, no hay proyecto con el cual no podamos
+        </p>
+    </div>
 
-    <div class="fila">
-        <div class="columna2">
-            <p id="titulo"> ¿Nos contactas? </p>
-            <p>Para cualquier duda o consultoria, por favor contáctanos
-                <br class="salto"> por el medio que gustes. Nuestro horario de atención
-                <br class="salto"> es de 9:00 a 19:00 horas de lunes a viernes.
-            </p>
-        </div>
-        <div class="columna2">
-            <div class="contenedor-datos">
-                <p>
-                    <b>cel.</b><a href="tel:7711435664"> 771-143-5464</a></p>
-                <p id="tel-normal">
-                    <b>tel.</b><a href="tel:7137715"> (771) 71 377 15</a>
-                    <br> &emsp;&nbsp;&nbsp;<a href="7194765"> (771) 71 947 65</a></p>
+    <div class="imagenes">
+        <img src="imagenes_nosotros/obrero.png" alt="casco" class="img-fluid">
+        <img src="imagenes_nosotros/piso.png" alt="ladrillos" class="img-fluid">
+        <img src="imagenes_nosotros/alambre.png" alt="almabre" class="img-fluid">
+    </div>
+
+    <div class="seccion2">
+        <p>Para asegurar tu confianza, contamos con el certificado de la NOM 018 ENER 2011, el cual revisa cada una de las propiedades
+            de nuestros materiales (como por ejemplo la conductividad térmica o la resistencia térmica). Además, cumplimos
+            con las normas mexicanas NMX C 404 ONNCCEE 2012 y NMX C 406 ONNCCE 2014 que garantizan nuestra calidad.
+        </p>
+    </div>
+
+    <div class="descarga">
+        <div class="izquierda">
+            <p>FICHAS TÉCNICAS</p>
                 
-                    <p id="tel-ipad">
-                        <b>tel.</b> (771) 71 377 15 | (771) 71 947 65</p>
-                    <p>
-                        <b>dir.</b> Av Rojo Gómez, no. 511 - C Col. Santa Julia, Pachuca Hgo</p>
-                    <p>
-                        <b>mail.</b><a href="mailto:contacto@dispreh.com.mx"> contacto@dispreh.com.mx</p></a>
-                    <p>
-                        <b>mail.</b><a href="mailto:ventas@dispreh.com.mx"> ventas@dispreh.com.mx</p></a>
-            </div>
+                <div class="icono-descarga"></div>
+        </div>
+
+        <div class="derecha">
+            <img src="imagenes_nosotros/ficha.png" alt="ficha">
         </div>
     </div>
 
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14986.161142451652!2d-98.75838!3d20.1114952!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x950892a843e97b80!2sDistribuidora+de+Prefabricaciones+S.A.+de+C.V.!5e0!3m2!1sen!2smx!4v1536737831129"
-        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-    <div class="contactamos">
-        <h1>¿Te contactamos?</h1>
-        <p>Si lo prefieres, nosotros nos ponemos en contacto contigo. <br class="salto"> Regálenos los siguientes datos y te contactamos a la brevedad</p>
-    </div>
-
-    <div class="fila3">
-        <div class="columna">
-            <img src="imagenes_nosotros/manosS.jpg" alt="mano" class="img-fluid" id="manosS">
-            <img src="imagenes_nosotros/manosML.jpg" alt="manos" class="img-fluid" id="manosML">
+    <div class="descarga">
+        <div class="izquierda">
+            <p>CATÁLOGO 2018</p>
+            
+            <div class="icono-descarga"></div>
         </div>
-        <div class="columna">
-            <form action="/forma.php" class="formulario">
-                <div class="b">
-                    <input type="text" name="nombre" placeholder="Nombre*">
-                    <br>
-
-                    <input type="text" name="apellido" placeholder="Apellido">
-                    <br>
-
-                    <input type="text" name="correo" id="" placeholder="Correo E.*">
-                    <br>
-
-                    <input type="text" name="telefono" id="" placeholder="Teléfono">
-                    <br>
-                    <br>
-
-                </div>
-                <div class="terms">
-                    <i class="far fa-circle"></i>
-                    <span>&nbsp;&nbsp;ACEPTO TÉRMINOS Y CONDICIONES
-                    </span>
-                </div>
-                <div class="a">
-                    <input type="submit" value="ENVIAR">
-                </div>
-            </form>
+        <div class="derecha">
+            <img src="imagenes_nosotros/catalogo.png" alt="catalogo-2018">
         </div>
     </div>
-
 
     <footer class="footer-movil">
-            <div class="logo-blanco"></div>
+        <div class="logo-blanco"></div>
 
-            <a href="">
-                    <div class="diamante">
-                            <i class="fas fa-angle-double-up arriba"></i>
-                    </div>
-                </a>
-                <div>REGRESAR A LA PARTE SUPERIOR
-                    <br>
-                    <br>Política de privacidad
-                    <br>CONTACTO@DISPREH.COM</div>
-            </footer>
+        <a href="">
+            <div class="diamante">
+                <i class="fas fa-angle-double-up arriba"></i>
+            </div>
+        </a>
+        <div>REGRESAR A LA PARTE SUPERIOR
+            <br>
+            <br>Política de privacidad
+            <br>CONTACTO@DISPREH.COM</div>
+    </footer>
 
     <footer id="grande">
-            <div class="arriba">
-                <div class="iconos-footer">
-                    <a href="">
-                        <i class="fab fa-facebook-f fa-1.5x"></i>
-                    </a>
-                    <a href="">
-                        <i class="fab fa-google-plus-g fa-1.5x"></i>
-                    </a>
-                    <a href="">
-                        <i class="fab fa-linkedin-in fa-1.5x"></i>
-                    </a>
-                </div>
-                <div class="flecha">
-                    <div class="diamante"><i class="fas fa-angle-up fa-2x"></i>
-                    </div>
-                </div>
-    
-                <div class="enlaces">
-                    <a href="">nosotros</a>
-                    <a href="">productos</a>
-                    <a href="">contacto</a>
-                    <a href="">del viento</a>
+        <div class="arriba">
+            <div class="iconos-footer">
+                <a href="">
+                    <i class="fab fa-facebook-f fa-1.5x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-google-plus-g fa-1.5x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-linkedin-in fa-1.5x"></i>
+                </a>
+            </div>
+            <div class="flecha">
+                <div class="diamante">
+                    <i class="fas fa-angle-up fa-2x"></i>
                 </div>
             </div>
-            <div class="recibe">
-                RECIBE MÁS INFORMACIÓN
+
+            <div class="enlaces">
+                <a href="">nosotros</a>
+                <a href="">productos</a>
+                <a href="">contacto</a>
+                <a href="">del viento</a>
             </div>
-    
-            <div class="ingresa">
-                <input type="text" name="nombre" placeholder="INGRESA TU MAIL AQUÍ*">
+        </div>
+        <div class="recibe">
+            RECIBE MÁS INFORMACIÓN
+        </div>
+
+        <div class="ingresa">
+            <input type="text" name="nombre" placeholder="INGRESA TU MAIL AQUÍ*">
+        </div>
+
+        <div class="abajo">
+            <div>
+                2018 DISPREH. TÉRMINOS Y CONDICIONES.
             </div>
-    
-            <div class="abajo">
-                <div>
-                        2018 DISPREH. TÉRMINOS Y CONDICIONES.
-                </div>
-                <div>
-                    POR <a href="" class="estimado"></a> ESTIMADO CLIENTE
-                </div>
+            <div>
+                POR
+                <a href="" class="estimado"></a> ESTIMADO CLIENTE
             </div>
-        </footer>
+        </div>
+    </footer>
 
     <script>
         function openNav() {
