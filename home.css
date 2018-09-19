@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@font-face {
+  font-family: oratorstd;
+  src: url("fuentes/OratorStd.otf") format("opentype");
+}
+@font-face {
+  font-family: gothamlight;
+  src: url("fuentes/Gotham-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: gothamBook;
+  src: url("fuentes/Gotham Book Regular.otf");
+}
+/* BARRA DE NAVEGACION  (ESTO SE VE EN ESCRITORIO)*/
+.topnav {
+  font-family: oratorstd;
+  justify-content: space-between;
+  display: flex;
+  overflow: hidden;
+  background-color: #333333ff;
+  height: 140px;
+  /* LOGO */
+  /* BOTON DE MENU */
+  /* contenedor */
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  color: #00A1BB;
+}
+.topnav a .active {
+  color: #00A1BB;
+}
+.topnav .logo {
+  background-image: url("logo-dispreh.svg");
+  width: 4rem;
+  height: 70px;
+  /* margin: 2rem, 2rem; */
+  margin-top: 1.6rem;
+  margin-left: 2rem;
+  padding-bottom: 2.2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.topnav .btn-menu {
+  margin: 1rem 2rem;
+  padding-top: 1rem;
+}
+
+/* desaparecerlo en movil */
+.topnav-right {
+  display: none;
+}
+
+/* boton */
+/* DIMENSIONES DEL LOGO Y MENU IPAD */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .logo {
+    width: 8rem;
+  }
+
+  .btn-menu {
+    padding-top: 2rem;
+  }
+}
+/* DESAPARECER MENU Y MOSTRAR BARRA DE NAVEGACION */
+@media only screen and (min-width: 1100px) {
+  .btn-menu {
+    display: none;
+  }
+
+  .topnav-right {
+    display: block;
+    float: right;
+    padding-top: 2.2rem;
+    padding-right: 2rem;
+  }
+
+  .logo {
+    width: 8rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+
+  .iconos a {
+    padding-top: 1.65rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+}
+/* MENU Y SU ANIMACION  (ESTO ES LO QUE SE VE EN MOVIL)*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #28324D;
+  overflow-x: hidden;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.overlay .closebtn {
+  position: absolute;
+  padding-top: 0px;
+  height: 86px;
+  right: 0px;
+  font-size: 54px;
+  padding-right: 34px;
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .overlay .closebtn .overlay .closebtn {
+    position: absolute;
+    right: 45px;
+    font-size: 80px;
+  }
+}
+.overlay .iconos-menu {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.overlay .iconos-menu .fa-1x {
+  font-size: 0.6em;
+}
+.overlay .iconos-menu {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.overlay .overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay .overlay-content a .active, .overlay .overlay-content a:hover, .overlay .overlay-content a:focus {
+  color: #929292;
+}
+
+/* Encerrar iconos en círculos */
+i.fab {
+  /* margin: 0.5em; */
+  color: white;
+  border: 1px solid #929292;
+  border-radius: 50%;
+  padding: 0.5em;
+  transition: all 0.5s ease;
+  width: 2.1em;
+  text-align: center;
+}
+i.fab:hover {
+  background: #929292;
+}
+
+.portada .texto {
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0.7;
+}
+.portada h1 {
+  font-size: 4.5rem;
+}
+.portada .dispreh {
+  color: #00A1BB;
+  opacity: none;
+}
+
+.seccion1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.seccion1 .columna {
+  flex: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.seccion1 .columna:nth-child(2) {
+  justify-content: center;
+}
+
+.img-contenedor-movil {
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-contenedor-movil .chico {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #D8D8D8;
+}
+.img-contenedor-movil .grande {
+  flex: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #D8D8D8;
+}
+.img-contenedor-movil .contenedor {
+  border: 1.5px solid white;
+}
+.img-contenedor-movil img {
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+.img-contenedor-movil img:nth-child(1) {
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=home.css.map */
