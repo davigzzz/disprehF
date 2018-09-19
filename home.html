@@ -25,22 +25,86 @@
 </head>
 
 <body>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="nosotros.html">nosotros</a>
+            <a href="#">productos</a>
+            <a href="#" class="active">contacto</a>
+            <a href="#">dispreh</a>
+            <div class="iconos-menu">
+                <a href="">
+                    <i class="fab fa-facebook-f fa-1x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-google-plus-g fa-1x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-linkedin-in fa-1x"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div class="topnav">
+        <a href="#" class="logo"></a>
+        <div class="topnav-right">
+            <a href="#" class="active">nosotros</a>
+            <a href="#">productos</a>
+            <a href="index.html">contacto</a>
+            <a href="#">dispreh</a>
+            <span class="iconos">
+                <a href="">
+                    <i class="fab fa-facebook-f fa-1.5x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-google-plus-g fa-1.5x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-linkedin-in fa-1.5x"></i>
+                </a>
+
+            </span>
+
+
+
+        </div>
+        <div class="btn-menu">
+            <img src="icono-menu.png" alt="menu" onclick="openNav()">
+            <!-- <i class="fas fa-bars fa-2x" onclick="openNav()"></i> -->
+        </div>
+    </div>
+
     <div class="portada">
-        <img src="imagenes_home/portada.png" alt="portada" class="img-fluid">
+        <img src="imagenes_home/portada.png" alt="portada" class="img-fluid" id="portada-movil">
+        <img src="imagenes_home/portadaXL.png" alt="portadaXL" class="img-fluid" id="portada-xl">
         <h1 class="texto">PODER, CREAR,
             <span class="dispreh"> DISPREH</span>
         </h1>
     </div>
 
+    
+
     <div class="seccion1">
         <div class="columna">
             <p>
-                <b> Un equipo, una familia.</b>
+                Un equipo,
+                <b>una familia.</b>
             </p>
             <p>Somos una empresa de productos prefabricados de concreto situada en el estado de Hidalgo. En Dispreh ofrecemos
                 <b> la mejor calidad gracias a los eficientes procesos que utilizamos,</b> la mejor materia prima y mano de obra
                 capacitada.
             </p>
+            <p>
+                En DISPREH nuestra responsabilidad para con nuestros clientes radica en tu seguridad, nuestra misión: hacerte
+                sentir confianza cuando construyas con nuestros materiales.
+                <br><br>
+                No importa si es una remodelación pequeña o la construcción de tu casa, <b>en DISPREH siempre vas a encontrar
+                    todo lo que necesitas.
+                </b>
+            </p>
+            
         </div>
         <div class="columna">
             <img src="imagenes_home/adopasto.png" alt="Adopasto" class="img-fluid">
@@ -51,32 +115,126 @@
 
     <div class="img-contenedor-movil">
         <div class="contenedor chico">
-            <img src="imagenes_home/block.png" alt="block-hueco" class="img-fluid ">
-            <p> BLOCK HUECO</p>
+            <a href="">
+                <img src="imagenes_home/block.png" alt="block-hueco" class="img-fluid ">
+                <p> BLOCK HUECO</p>
+            </a>
         </div>
 
         <div class="contenedor chico">
-            <img src="imagenes_home/adocreto.png" alt="adocreto" class="img-fluid ">
-            <p> ADOCRETO</p>
+            <a href="">
+                <img src="imagenes_home/adocreto.png" alt="adocreto" class="img-fluid ">
+                <p> ADOCRETO</p>
+            </a>
 
         </div>
         <div class="contenedor grande">
-            <img src="imagenes_home/vigueta.png" alt="vigueta-bovedilla" class="img-fluid">
-            <p> VIGUETA Y BOVEDILLA</p>
+            <a href="">
+                <img src="imagenes_home/vigueta.png" alt="vigueta-bovedilla" class="img-fluid">
+                <p> VIGUETA Y BOVEDILLA</p>
+            </a>
         </div>
         <div class="contenedor chico">
-            <img src="imagenes_home/adoquin.png" alt="adoquin" class="img-fluid">
-            <p> ADOQUIN </p>
+            <a href="">
+                <img src="imagenes_home/adoquin.png" alt="adoquin" class="img-fluid">
+                <p> ADOQUIN </p>
+            </a>
         </div>
         <div class="contenedor chico">
-            <img src="imagenes_home/adopasto2.png" alt="adopasto" class="img-fluid">
-            <p> ADOPASTO</p>
+            <a href="">
+                <img src="imagenes_home/adopasto2.png" alt="adopasto" class="img-fluid">
+                <p> ADOPASTO</p>
+            </a>
         </div>
         <div class="contenedor grande">
-            <img src="imagenes_home/poliestireno.png" alt="poliestireno" class="img-fluid">
-            <p> POLIESTIRENO </p>
+            <a href="">
+                <img src="imagenes_home/poliestireno.png" alt="poliestireno" class="img-fluid">
+                <p> POLIESTIRENO </p>
+            </a>
+        </div>
+        <a href="contacto.html" class="button"> CONTACTO </a>
+
+    </div>
+
+    <div class="descargas">
+        <div class="contenedor">
+            <img src="imagenes_nosotros/ficha.jpg" alt="ficha-tecnica" class="img-fluid">
+        </div>
+        <div class="contenedor">
+            <img src="imagenes_nosotros/catalogo.jpg" alt="catalogo2018" class="img-fluid">
         </div>
     </div>
+
+    <img src="imagenes_home/alambre.png" alt="alambre" class="img-fluid">
+
+    <footer class="footer-movil">
+        <div class="logo-blanco"></div>
+
+        <a href="">
+            <div class="diamante">
+                <i class="fas fa-angle-double-up arriba"></i>
+            </div>
+        </a>
+        <div>REGRESAR A LA PARTE SUPERIOR
+            <br>
+            <br>Política de privacidad
+            <br>CONTACTO@DISPREH.COM</div>
+    </footer>
+
+    <footer id="grande">
+        <div class="arriba">
+            <div class="iconos-footer">
+                <a href="">
+                    <i class="fab fa-facebook-f fa-1.5x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-google-plus-g fa-1.5x"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-linkedin-in fa-1.5x"></i>
+                </a>
+            </div>
+            <div class="flecha">
+                <div class="diamante">
+                    <i class="fas fa-angle-up fa-2x"></i>
+                </div>
+            </div>
+
+            <div class="enlaces">
+                <a href="">nosotros</a>
+                <a href="">productos</a>
+                <a href="">contacto</a>
+                <a href="">del viento</a>
+            </div>
+        </div>
+        <div class="recibe">
+            RECIBE MÁS INFORMACIÓN
+        </div>
+
+        <div class="ingresa">
+            <input type="text" name="nombre" placeholder="INGRESA TU MAIL AQUÍ*">
+        </div>
+
+        <div class="abajo">
+            <div>
+                2018 DISPREH. TÉRMINOS Y CONDICIONES.
+            </div>
+            <div>
+                POR
+                <a href="" class="estimado"></a> ESTIMADO CLIENTE
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
 
 </body>
 

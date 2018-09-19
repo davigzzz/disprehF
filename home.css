@@ -19,7 +19,7 @@
   display: flex;
   overflow: hidden;
   background-color: #333333ff;
-  height: 140px;
+  z-index: 3;
   /* LOGO */
   /* BOTON DE MENU */
   /* contenedor */
@@ -48,11 +48,12 @@
   padding-bottom: 2.2rem;
   background-size: 100%;
   background-repeat: no-repeat;
-  z-index: 2;
+  z-index: 4;
 }
 .topnav .btn-menu {
   margin: 1rem 2rem;
   padding-top: 1rem;
+  z-index: 2;
 }
 
 /* desaparecerlo en movil */
@@ -101,7 +102,7 @@
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   left: 0;
   background-color: #28324D;
@@ -171,6 +172,28 @@ i.fab:hover {
   background: #929292;
 }
 
+#portada-movil {
+  width: 100%;
+}
+@media only screen and (min-width: 900px) {
+  #portada-movil {
+    display: none;
+  }
+}
+
+#portada-xl {
+  width: 100%;
+  display: none;
+}
+@media only screen and (min-width: 900px) {
+  #portada-xl {
+    display: block;
+  }
+}
+
+.portada {
+  margin-top: -96px;
+}
 .portada .texto {
   position: absolute;
   top: 26%;
@@ -179,8 +202,20 @@ i.fab:hover {
   color: white;
   opacity: 0.7;
 }
+@media only screen and (min-width: 900px) {
+  .portada .texto {
+    opacity: 1;
+    top: 30vw;
+    left: 38vw;
+  }
+}
 .portada h1 {
   font-size: 4.5rem;
+}
+@media only screen and (min-width: 900px) {
+  .portada h1 {
+    font-size: 9vw;
+  }
 }
 .portada .dispreh {
   color: #00A1BB;
@@ -191,18 +226,72 @@ i.fab:hover {
   display: flex;
   flex-wrap: wrap;
 }
+@media only screen and (min-width: 900px) {
+  .seccion1 {
+    padding-top: 5rem;
+  }
+}
 .seccion1 .columna {
   flex: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+@media only screen and (min-width: 900px) {
+  .seccion1 .columna:nth-child(1) {
+    flex: 55%;
+    order: 2;
+    padding-right: 10rem;
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .seccion1 .columna:nth-child(2) {
+    flex: 45%;
+    order: 1;
+  }
+}
+.seccion1 .columna p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: gothamlight;
+}
+.seccion1 .columna p:nth-child(1) {
+  padding-top: 2rem;
+  font-size: 19px;
+}
+.seccion1 .columna p:nth-child(2) {
+  font-size: 14px;
+}
+.seccion1 .columna p:nth-child(3) {
+  display: none;
+}
+@media only screen and (min-width: 900px) {
+  .seccion1 .columna p:nth-child(3) {
+    display: block;
+  }
+}
 .seccion1 .columna:nth-child(2) {
+  padding: 2rem;
   justify-content: center;
+}
+
+h6 {
+  text-align: center;
+  font-family: oratorstd;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+@media only screen and (min-width: 900px) {
+  h6 {
+    font-size: 3.2rem;
+  }
 }
 
 .img-contenedor-movil {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .img-contenedor-movil .chico {
   flex: 50%;
@@ -223,6 +312,10 @@ i.fab:hover {
 .img-contenedor-movil .contenedor {
   border: 1.5px solid white;
 }
+.img-contenedor-movil .contenedor a {
+  text-align: center;
+  color: black;
+}
 .img-contenedor-movil img {
   padding: 2rem;
   padding-bottom: 1rem;
@@ -230,5 +323,196 @@ i.fab:hover {
 .img-contenedor-movil img:nth-child(1) {
   padding: 1rem;
 }
+.img-contenedor-movil .button {
+  background-color: #D8D8D8;
+  border: none;
+  color: #00A1BB;
+  font-size: 14px;
+  cursor: pointer;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-top: 3rem;
+}
+@media only screen and (min-width: 900px) {
+  .img-contenedor-movil .button {
+    background: white;
+    font-size: 28px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+    border: 1px solid black;
+  }
+}
+
+.descargas {
+  display: flex;
+  flex-wrap: wrap;
+}
+.descargas .contenedor {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.descargas .contenedor:nth-child(1) {
+  padding-top: 3rem;
+}
+.descargas .contenedor:nth-child(2) {
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+@media only screen and (min-width: 600px) {
+  .descargas .contenedor {
+    flex: 50%;
+  }
+  .descargas .contenedor:nth-child(1) {
+    padding-left: 12rem;
+    padding-top: 3rem;
+  }
+  .descargas .contenedor:nth-child(2) {
+    padding-right: 12rem;
+    padding-top: 3rem;
+  }
+}
+
+/* EMPIEZA FOOTER */
+footer {
+  background-color: #333333ff;
+  font-family: gothamlight;
+}
+
+.footer-movil {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #333333ff;
+  height: 259px;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-blanco {
+  background-image: url("logo-dispreh.svg");
+  width: 4rem;
+  /* margin: 2rem, 2rem; */
+  margin-top: 4.73rem;
+  padding-bottom: 3.2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+a i {
+  padding-top: 2.8rem;
+}
+
+.footer-movil a {
+  color: white;
+}
+
+.letra {
+  transform: rotate(-45deg);
+}
+
+#grande {
+  display: none;
+}
+
+@media only screen and (min-width: 769px) {
+  #grande {
+    display: block;
+  }
+
+  .footer-movil {
+    display: none;
+  }
+}
+.arriba {
+  display: flex;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 2rem;
+  font-family: oratorstd;
+}
+.arriba .iconos-footer {
+  flex: 43%;
+}
+.arriba .iconos-footer a {
+  padding-right: 1rem;
+}
+.arriba .flecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 40%;
+}
+.arriba .flecha .fas {
+  color: white;
+}
+.arriba .enlaces {
+  display: flex;
+  flex: 43%;
+  justify-content: space-between;
+}
+.arriba .enlaces a {
+  color: white;
+  padding-right: 1.3rem;
+}
+
+.recibe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00A1BB;
+  margin-top: 2rem;
+}
+
+.abajo {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-bottom: 2rem;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.ingresa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.ingresa input[type=text] {
+  background: transparent;
+  letter-spacing: 3px;
+  width: 44%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  color: white;
+  border-bottom: 1px solid white;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+.estimado {
+  background-image: url("logo-dispreh.svg");
+  width: 11rem;
+  height: 70px;
+  /* margin: 2rem, 2rem; */
+  margin-left: 1rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/*TERMINA FOOTER*/
 
 /*# sourceMappingURL=home.css.map */
