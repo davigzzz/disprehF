@@ -83,6 +83,7 @@
     float: right;
     padding-top: 2.2rem;
     padding-right: 2rem;
+    z-index: 2;
   }
 
   .logo {
@@ -194,9 +195,14 @@ i.fab:hover {
 .portada {
   margin-top: -96px;
 }
+@media only screen and (min-width: 900px) {
+  .portada {
+    margin-top: -126px;
+  }
+}
 .portada .texto {
   position: absolute;
-  top: 26%;
+  top: 55vw;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -210,7 +216,7 @@ i.fab:hover {
   }
 }
 .portada h1 {
-  font-size: 4.5rem;
+  font-size: 20vw;
 }
 @media only screen and (min-width: 900px) {
   .portada h1 {
@@ -238,15 +244,21 @@ i.fab:hover {
 }
 @media only screen and (min-width: 900px) {
   .seccion1 .columna:nth-child(1) {
-    flex: 55%;
+    flex: 50%;
     order: 2;
     padding-right: 10rem;
     letter-spacing: 2px;
   }
 }
+.seccion1 .columna:nth-child(2) {
+  padding: 2rem;
+  justify-content: center;
+}
 @media only screen and (min-width: 900px) {
   .seccion1 .columna:nth-child(2) {
-    flex: 45%;
+    display: flex;
+    align-items: center;
+    flex: 50%;
     order: 1;
   }
 }
@@ -270,9 +282,14 @@ i.fab:hover {
     display: block;
   }
 }
-.seccion1 .columna:nth-child(2) {
-  padding: 2rem;
-  justify-content: center;
+#block {
+  content: url("imagenes_home/adopasto.png");
+}
+@media only screen and (min-width: 900px) {
+  #block {
+    content: url("imagenes_home/adopastoXL.png");
+    height: 17vw;
+  }
 }
 
 h6 {
@@ -296,10 +313,8 @@ h6 {
 .img-contenedor-movil .chico {
   flex: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   background-color: #D8D8D8;
+  flex-direction: column;
 }
 .img-contenedor-movil .grande {
   flex: 100%;
@@ -311,6 +326,11 @@ h6 {
 }
 .img-contenedor-movil .contenedor {
   border: 1.5px solid white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 99.5%;
+  height: 99%;
 }
 .img-contenedor-movil .contenedor a {
   text-align: center;
@@ -344,9 +364,22 @@ h6 {
     padding-left: 6.5rem;
     padding-right: 6.5rem;
     border: 1px solid black;
+    transition: all 0.5s ease;
+  }
+  .img-contenedor-movil .button:hover {
+    background-color: #333333ff;
+    text-decoration: none;
   }
 }
 
+.img-contenedor-xl {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.img-contenedor-xl .contenedor {
+  flex: 1 1 33%;
+}
 .descargas {
   display: flex;
   flex-wrap: wrap;
@@ -374,6 +407,11 @@ h6 {
     padding-right: 12rem;
     padding-top: 3rem;
   }
+}
+
+#alambre {
+  width: 100%;
+  content: url("imagenes_home/alambreXL.png");
 }
 
 /* EMPIEZA FOOTER */
