@@ -310,6 +310,11 @@ h6 {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media only screen and (min-width: 900px) {
+  .img-contenedor-movil {
+    display: none;
+  }
+}
 .img-contenedor-movil .chico {
   flex: 50%;
   display: flex;
@@ -373,13 +378,79 @@ h6 {
 }
 
 .img-contenedor-xl {
-  display: flex;
+  display: none;
   flex-direction: column;
   flex-wrap: wrap;
+  height: 50vw;
+}
+@media only screen and (min-width: 900px) {
+  .img-contenedor-xl {
+    display: flex;
+  }
 }
 .img-contenedor-xl .contenedor {
   flex: 1 1 33%;
+  background-color: #D8D8D8;
 }
+.img-contenedor-xl .contenedor .subcontenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  margin: 1px;
+}
+.img-contenedor-xl .contenedor .subcontenedor img {
+  height: 20vw;
+}
+
+#vigueta {
+  width: 70%;
+}
+
+.vigueta {
+  display: none;
+  justify-content: center;
+  align-content: center;
+  height: 20vw;
+  background-color: #D8D8D8;
+}
+@media only screen and (min-width: 900px) {
+  .vigueta {
+    display: flex;
+  }
+}
+
+.contenedor-boton {
+  display: none;
+  align-content: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 900px) {
+  .contenedor-boton {
+    display: flex;
+  }
+}
+.contenedor-boton .button {
+  background: white;
+  font-size: 28px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+  border: 1px solid black;
+  transition: all 0.5s ease;
+  margin-top: 3rem;
+  color: #00A1BB;
+  border-color: #D8D8D8;
+}
+.contenedor-boton .button:hover {
+  background-color: #D8D8D8;
+  text-decoration: none;
+  border-color: #D8D8D8;
+}
+
 .descargas {
   display: flex;
   flex-wrap: wrap;
