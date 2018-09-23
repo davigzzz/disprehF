@@ -35,7 +35,7 @@
 .topnav a:hover {
   color: #00A1BB;
 }
-.topnav a .active {
+.topnav .active {
   color: #00A1BB;
 }
 .topnav .logo {

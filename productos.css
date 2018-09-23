@@ -179,6 +179,12 @@ i.fab:hover {
   background-repeat: no-repeat;
   background-image: url("imagenes_productos/portada.png");
 }
+@media only screen and (min-width: 600px) {
+  .portada {
+    background-image: url("imagenes_productos/portadaXL.png");
+    height: 54vw;
+  }
+}
 .portada h1 {
   color: white;
   font-family: oratorstd;
@@ -186,13 +192,46 @@ i.fab:hover {
   padding-top: 24vw;
   text-align: center;
 }
+@media only screen and (min-width: 600px) {
+  .portada h1 {
+    font-size: 3.5vw;
+    padding-top: 12vw;
+  }
+  .portada h1 br {
+    display: none;
+  }
+}
 
 .seccion1 {
   margin: 2rem;
   font-family: gothamlight;
 }
-.seccion1 p:nth-child(2) {
-  font-size: 14px;
+.seccion1 br {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  .seccion1 br {
+    display: block;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .seccion1 {
+    background-image: url("imagenes_productos/fondo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 29vw;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .seccion1 p {
+    margin-left: 4rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .seccion1 p:nth-child(1) {
+    padding-top: 3rem;
+  }
 }
 
 .nombres {
@@ -201,6 +240,11 @@ i.fab:hover {
   justify-content: center;
   align-items: center;
   height: 30vw;
+}
+@media only screen and (min-width: 600px) {
+  .nombres {
+    height: 15vw;
+  }
 }
 .nombres h1 {
   color: #00A1BB;
@@ -253,6 +297,18 @@ i.fab:hover {
   background-color: #D8D8D8;
   text-decoration: none;
   border-color: #D8D8D8;
+}
+
+.subcontenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 1px;
+}
+.subcontenedor img {
+  height: 20vw;
 }
 
 .byv {

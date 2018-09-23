@@ -33,7 +33,7 @@ body {
   justify-content: space-between;
   display: flex;
   overflow: hidden;
-  background-color: #333333ff;
+  background-color: transparent;
   height: 140px;
   /* LOGO */
   /* BOTON DE MENU */
@@ -41,7 +41,7 @@ body {
 }
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 2rem 1.5rem;
   text-decoration: none;
@@ -174,7 +174,7 @@ body {
 /* Encerrar iconos en círculos */
 i.fab {
   /* margin: 0.5em; */
-  color: white;
+  color: #8F8F8F;
   border: 1px solid #929292;
   border-radius: 50%;
   padding: 0.5em;
@@ -186,6 +186,25 @@ i.fab:hover {
   background: #929292;
 }
 
+#portada-movil {
+  width: 100%;
+}
+@media only screen and (min-width: 900px) {
+  #portada-movil {
+    display: none;
+  }
+}
+
+#portada-xl {
+  width: 100%;
+  display: none;
+}
+@media only screen and (min-width: 900px) {
+  #portada-xl {
+    display: block;
+  }
+}
+
 .portada {
   /* background-image: url(imagenes_nosotros/portadaS.png);
    background-size: cover;
@@ -193,6 +212,33 @@ i.fab:hover {
    height: 478px;
    background-position: center;
    margin-top: 3px;*/
+}
+.portada .texto {
+  position: absolute;
+  top: 55vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+@media only screen and (min-width: 900px) {
+  .portada .texto {
+    top: 41vw;
+    left: 69vw;
+  }
+}
+.portada h1 {
+  font-size: 20vw;
+}
+@media only screen and (min-width: 900px) {
+  .portada h1 {
+    font-size: 4vw;
+  }
+}
+.portada .gustan {
+  font-size: 2.3vw;
+}
+.portada .poreso {
+  font-size: 2vw;
 }
 
 p {
@@ -214,11 +260,82 @@ p {
   margin-right: 5rem;
   margin-left: 2rem;
   font-family: gothamlight;
-  font-size: 10px;
+  font-size: 14px;
   text-align: justify;
 }
 .seccion1 p:nth-child(4) {
   margin-top: 1.5rem;
+}
+@media only screen and (min-width: 900px) {
+  .seccion1 {
+    display: none;
+  }
+}
+
+.seccion1-xl {
+  display: none;
+}
+@media only screen and (min-width: 900px) {
+  .seccion1-xl {
+    display: block;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .seccion1-xl b {
+    font-family: Raleway;
+  }
+  .seccion1-xl p {
+    font-size: 14px;
+  }
+  .seccion1-xl p:nth-child(2) {
+    margin-bottom: 5rem;
+  }
+  .seccion1-xl p:nth-child(4) {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .seccion1-xl .titulo {
+    font-size: 19px;
+    margin-top: 5rem;
+  }
+}
+
+#obrero {
+  content: url("imagenes_nosotros/obrero.png");
+}
+@media only screen and (min-width: 900px) {
+  #obrero {
+    content: url("imagenes_nosotros/obreroXL.png");
+    height: 30%;
+    width: 30%;
+    order: 2;
+  }
+}
+
+#piso {
+  content: url("imagenes_nosotros/piso.png");
+}
+@media only screen and (min-width: 900px) {
+  #piso {
+    content: url("imagenes_nosotros/pisoXL.png");
+    height: 30%;
+    width: 30%;
+    order: 1;
+  }
+}
+
+#alambre {
+  content: url("imagenes_nosotros/alambre.png");
+}
+@media only screen and (min-width: 900px) {
+  #alambre {
+    content: url("imagenes_nosotros/alambreXL.png");
+    height: 30%;
+    width: 30%;
+    order: 3;
+  }
 }
 
 .imagenes {
@@ -234,21 +351,51 @@ p {
   margin: 1rem;
 }
 
+.seccion2 {
+  font-family: gothamlight;
+}
 .seccion2 p {
   margin: 2rem;
-  font-size: 10px;
+  font-size: 14px;
+}
+@media only screen and (min-width: 900px) {
+  .seccion2 p {
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-top: 5rem;
+  }
+}
+.seccion2 b {
+  font-family: gothamlight;
 }
 
-.descarga {
+.descargas {
   display: flex;
   flex-wrap: wrap;
 }
-.descarga img {
-  margin-right: 7vw;
-  margin-left: 7vw;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  height: 56vw;
+.descargas .contenedor {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.descargas .contenedor:nth-child(1) {
+  padding-top: 3rem;
+}
+.descargas .contenedor:nth-child(2) {
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+@media only screen and (min-width: 600px) {
+  .descargas .contenedor {
+    flex: 50%;
+  }
+  .descargas .contenedor:nth-child(1) {
+    padding-left: 12rem;
+    padding-top: 3rem;
+  }
+  .descargas .contenedor:nth-child(2) {
+    padding-right: 12rem;
+    padding-top: 3rem;
+  }
 }
 
 /* EMPIEZA FOOTER */
