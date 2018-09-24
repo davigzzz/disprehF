@@ -35,9 +35,6 @@ body {
   overflow: hidden;
   background-color: transparent;
   height: 140px;
-  /* LOGO */
-  /* BOTON DE MENU */
-  /* contenedor */
 }
 .topnav a {
   float: left;
@@ -50,10 +47,12 @@ body {
 .topnav a:hover {
   color: #00A1BB;
 }
-.topnav a .active {
+.topnav .active {
   color: #00A1BB;
 }
-.topnav .logo {
+
+/* LOGO */
+.logo {
   background-image: url("logo-dispreh.svg");
   width: 4rem;
   height: 70px;
@@ -65,7 +64,10 @@ body {
   background-repeat: no-repeat;
   z-index: 2;
 }
-.topnav .btn-menu {
+
+/* BOTON DE MENU */
+/* contenedor */
+.btn-menu {
   margin: 1rem 2rem;
   padding-top: 1rem;
 }
@@ -155,11 +157,6 @@ body {
 .overlay .iconos-menu .fa-1x {
   font-size: 0.6em;
 }
-.overlay .iconos-menu {
-  display: flex;
-  justify-content: center;
-  padding-top: 5rem;
-}
 .overlay .overlay-content {
   position: relative;
   top: 15%;
@@ -186,22 +183,13 @@ i.fab:hover {
   background: #929292;
 }
 
-#portada-movil {
+#portada {
   width: 100%;
+  content: url("imagenes_nosotros/portadaS.png");
 }
-@media only screen and (min-width: 900px) {
-  #portada-movil {
-    display: none;
-  }
-}
-
-#portada-xl {
-  width: 100%;
-  display: none;
-}
-@media only screen and (min-width: 900px) {
-  #portada-xl {
-    display: block;
+@media only screen and (min-width: 600px) {
+  #portada {
+    content: url("imagenes_nosotros/portadaXL.png");
   }
 }
 
@@ -215,23 +203,25 @@ i.fab:hover {
 }
 .portada .texto {
   position: absolute;
-  top: 55vw;
+  top: 48vw;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
   .portada .texto {
-    top: 41vw;
+    top: 48vw;
     left: 69vw;
   }
 }
 .portada h1 {
   font-size: 20vw;
+  display: none;
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
   .portada h1 {
     font-size: 4vw;
+    display: block;
   }
 }
 .portada .gustan {

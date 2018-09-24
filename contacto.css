@@ -85,7 +85,7 @@
 .topnav a:hover {
   color: #00A1BB;
 }
-.topnav a .active {
+.topnav .active {
   color: #00A1BB;
 }
 
@@ -449,6 +449,9 @@ i.fab:hover {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
+.fila3 .columna:nth-child(2) input[type=text] .telefono {
+  margin-bottom: 1.75rem;
+}
 .fila3 .columna:nth-child(2) input[type=submit] {
   align-items: center;
   align-content: center;
@@ -509,6 +512,7 @@ i.fab:hover {
   font-family: gothamlight;
   align-items: center;
   justify-content: center;
+  margin-top: -2rem;
 }
 .fila3 .columna .terms span {
   font-family: gothamlight;
@@ -527,6 +531,7 @@ i.fab:hover {
     display: none;
   }
 }
+/* EMPIEZA FOOTER */
 footer {
   background-color: #333333ff;
   font-family: gothamlight;
@@ -662,5 +667,7 @@ a i {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
+/*TERMINA FOOTER*/
 
 /*# sourceMappingURL=contacto.css.map */

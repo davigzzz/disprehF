@@ -12,18 +12,18 @@
   font-family: gothamBook;
   src: url("fuentes/Gotham Book Regular.otf");
 }
-/* BARRA DE NAVEGACION  (ESTO SE VE EN ESCRITORIO)*/
+/* BARRA DE NAVEGACION */
 .topnav {
   font-family: oratorstd;
   justify-content: space-between;
   display: flex;
   overflow: hidden;
   background-color: transparent;
-  z-index: 3;
+  height: 140px;
 }
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 2rem 1.5rem;
   text-decoration: none;
@@ -47,7 +47,7 @@
   padding-bottom: 2.2rem;
   background-size: 100%;
   background-repeat: no-repeat;
-  z-index: 4;
+  z-index: 2;
 }
 
 /* BOTON DE MENU */
@@ -55,7 +55,6 @@
 .btn-menu {
   margin: 1rem 2rem;
   padding-top: 1rem;
-  z-index: 2;
 }
 
 /* desaparecerlo en movil */
@@ -67,7 +66,7 @@
 /* DIMENSIONES DEL LOGO Y MENU IPAD */
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .logo {
-    width: 6rem;
+    width: 8rem;
   }
 
   .btn-menu {
@@ -85,11 +84,10 @@
     float: right;
     padding-top: 2.2rem;
     padding-right: 2rem;
-    z-index: 2;
   }
 
   .logo {
-    width: 8rem;
+    width: 6rem;
     margin-top: 3rem;
     margin-left: 3rem;
   }
@@ -100,12 +98,12 @@
     padding-right: 0.7rem;
   }
 }
-/* MENU Y SU ANIMACION  (ESTO ES LO QUE SE VE EN MOVIL)*/
+/* MENU Y SU ANIMACION */
 .overlay {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 3;
+  z-index: 1;
   top: 0;
   left: 0;
   background-color: #28324D;
@@ -144,11 +142,6 @@
 .overlay .iconos-menu .fa-1x {
   font-size: 0.6em;
 }
-.overlay .iconos-menu {
-  display: flex;
-  justify-content: center;
-  padding-top: 5rem;
-}
 .overlay .overlay-content {
   position: relative;
   top: 15%;
@@ -163,7 +156,7 @@
 /* Encerrar iconos en círculos */
 i.fab {
   /* margin: 0.5em; */
-  color: white;
+  color: #8F8F8F;
   border: 1px solid #929292;
   border-radius: 50%;
   padding: 0.5em;
@@ -175,100 +168,143 @@ i.fab:hover {
   background: #929292;
 }
 
-.portada {
-  height: 123vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("imagenes_productos/portada.png");
-}
-@media only screen and (min-width: 600px) {
-  .portada {
-    background-image: url("imagenes_productos/portadaXL.png");
-    height: 54vw;
-  }
-}
-.portada h1 {
-  color: white;
-  font-family: oratorstd;
-  font-size: 7vw;
-  padding-top: 24vw;
+h1 {
   text-align: center;
 }
-@media only screen and (min-width: 600px) {
-  .portada h1 {
-    font-size: 3.5vw;
-    padding-top: 12vw;
-  }
-  .portada h1 br {
+
+@media only screen and (min-width: 700px) {
+  #tm {
     display: none;
   }
 }
 
-.seccion1 {
-  margin: 2rem;
-  font-family: gothamlight;
-}
-.seccion1 br {
+#tl {
   display: none;
 }
-@media only screen and (min-width: 600px) {
-  .seccion1 br {
+@media only screen and (min-width: 700px) {
+  #tl {
     display: block;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .seccion1 {
-    background-image: url("imagenes_productos/fondo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 29vw;
-    margin: 0;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .seccion1 p {
-    margin-left: 4rem;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .seccion1 p:nth-child(1) {
+    text-align: left;
+    padding-left: 2rem;
     padding-top: 3rem;
   }
 }
 
-.nombres {
+.producto {
+  background-image: url(imagenes_prodint/fondo.png);
+  height: 90vw;
+  background-size: contain;
   display: flex;
-  flex-direction: column;
+  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
-  height: 30vw;
+  background-position: center bottom;
 }
-@media only screen and (min-width: 600px) {
-  .nombres {
-    height: 15vw;
+@media only screen and (min-width: 700px) {
+  .producto {
+    background-image: url("imagenes_prodint/fondoXL.png");
+    height: 37vw;
   }
 }
-.nombres h1 {
-  color: #00A1BB;
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: oratorstd;
+
+#img-adoquin {
+  height: 62vw;
+  position: absolute;
+  content: url("imagenes_prodint/adoquin.png");
 }
-.nombres h3 {
-  font-family: Raleway;
-  font-size: 1rem;
-  text-align: center;
+@media only screen and (min-width: 700px) {
+  #img-adoquin {
+    content: url("imagenes_prodint/adoquinXL.png");
+    height: 38vw;
+    transform: translate(0, 5%);
+  }
 }
 
-.contenedor-botones {
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  #fi1 {
+    background-image: url("imagenes_prodint/fondobajo.png");
+    background-size: cover;
+    height: 29vw;
+  }
+}
+
+#fi2 {
+  padding-top: 5rem;
+}
+@media only screen and (min-width: 700px) {
+  #fi2 {
+    padding-top: 13rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #fi2 {
+    padding-top: 5rem;
+  }
+}
+
+.seccion1 {
+  flex: 100%;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  font-size: 14px;
+}
+.seccion1 p {
+  font-family: gothamlight;
+}
+@media only screen and (min-width: 700px) {
+  .seccion1 {
+    flex: 50%;
+    padding-right: 0rem;
+  }
+}
+
+.caracteristicas {
+  flex: 100%;
+  padding-left: 2rem;
+  font-size: 14px;
+  font-family: gothamlight;
+}
+@media only screen and (min-width: 700px) {
+  .caracteristicas {
+    flex: 50%;
+    padding-right: 5rem;
+    padding-left: 5vw;
+  }
+}
+
+.ficha {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 100%;
 }
-.contenedor-botones .boton1 {
+@media only screen and (min-width: 700px) {
+  .ficha {
+    flex: 50%;
+  }
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 100%;
+}
+@media only screen and (min-width: 700px) {
+  .botones {
+    flex: 50%;
+  }
+}
+.botones .boton {
   background-color: #D8D8D8;
   border: none;
-  color: #00A1BB;
+  color: white;
   font-size: 14px;
   cursor: pointer;
   padding-top: 0.5rem;
@@ -276,29 +312,33 @@ i.fab:hover {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   margin-top: 3rem;
+  transition: all 0.5s ease;
 }
-.contenedor-botones .boton1:hover {
-  background-color: #D8D8D8;
+.botones .boton:hover {
+  background-color: #00A1BB;
   text-decoration: none;
   border-color: #D8D8D8;
 }
-.contenedor-botones .boton2 {
-  background-color: #333333ff;
-  border: none;
-  color: #00A1BB;
-  font-size: 14px;
-  cursor: pointer;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  margin-top: 1.3rem;
-  margin-bottom: 2rem;
+.botones .boton:nth-child(2) {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
-.contenedor-botones .boton2:hover {
-  background-color: #D8D8D8;
-  text-decoration: none;
-  border-color: #D8D8D8;
+
+#arr {
+  padding-top: 0rem;
+}
+
+h4 {
+  font-family: oratorstd;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+@media only screen and (min-width: 900px) {
+  h4 {
+    padding-top: 8rem;
+    font-size: 4vw;
+  }
 }
 
 .subcontenedor {
@@ -310,100 +350,34 @@ i.fab:hover {
   margin: 1px;
 }
 .subcontenedor img {
-  height: 14vw;
+  height: 20vw;
 }
 
-.byv {
+.sugerencias {
   display: flex;
   flex-wrap: wrap;
   background-color: #D8D8D8;
 }
-.byv .contenedor {
-  flex: 100%;
+.sugerencias .contenedor {
+  flex: 48%;
   display: flex;
   justify-content: center;
   border: 1px solid white;
   margin: 1px;
-  height: 30vw;
-}
-@media only screen and (min-width: 600px) {
-  .byv .contenedor {
-    flex: 48.5%;
-  }
-}
-
-.ea {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #D8D8D8;
-}
-.ea .contenedor {
-  flex: 48.5%;
-  display: flex;
-  justify-content: center;
-  border: 1px solid white;
-  margin: 1px;
-  height: 30vw;
-}
-.ea .contenedor:nth-child(3) {
-  flex: 100%;
-}
-@media only screen and (min-width: 600px) {
-  .ea .contenedor:nth-child(3) {
-    flex: 33%;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .ea .contenedor {
-    flex: 33%;
-  }
-}
-
-.block {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #D8D8D8;
-}
-.block .contenedor {
-  flex: 48.5%;
-  display: flex;
-  justify-content: center;
-  border: 1px solid white;
-  margin: 1px;
-  height: 30vw;
-}
-@media only screen and (min-width: 600px) {
-  .block .contenedor {
-    flex: 48.5%;
-  }
+  height: 40vw;
 }
 @media only screen and (min-width: 900px) {
-  .block .contenedor {
-    flex: 30%;
+  .sugerencias .contenedor {
+    flex: 30.5%;
   }
 }
 
-.adocreto {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #D8D8D8;
-}
-.adocreto .contenedor {
-  flex: 48.5%;
-  display: flex;
-  justify-content: center;
-  border: 1px solid white;
-  margin: 1px;
-  height: 30vw;
-}
-@media only screen and (min-width: 600px) {
-  .adocreto .contenedor {
-    flex: 48.5%;
-  }
+#cm {
+  display: none;
 }
 @media only screen and (min-width: 900px) {
-  .adocreto .contenedor {
-    flex: 30%;
+  #cm {
+    display: block;
   }
 }
 
@@ -544,7 +518,4 @@ a i {
   background-repeat: no-repeat;
 }
 
-/*TERMINA FOOTER*/
-/* TAMAÑO DE IMÁGENES */
-
-/*# sourceMappingURL=productos.css.map */
+/*# sourceMappingURL=prod_ind.css.map */

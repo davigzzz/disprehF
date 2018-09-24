@@ -20,9 +20,6 @@
   overflow: hidden;
   background-color: #333333ff;
   z-index: 3;
-  /* LOGO */
-  /* BOTON DE MENU */
-  /* contenedor */
 }
 .topnav a {
   float: left;
@@ -38,7 +35,9 @@
 .topnav .active {
   color: #00A1BB;
 }
-.topnav .logo {
+
+/* LOGO */
+.logo {
   background-image: url("logo-dispreh.svg");
   width: 4rem;
   height: 70px;
@@ -50,7 +49,10 @@
   background-repeat: no-repeat;
   z-index: 4;
 }
-.topnav .btn-menu {
+
+/* BOTON DE MENU */
+/* contenedor */
+.btn-menu {
   margin: 1rem 2rem;
   padding-top: 1rem;
   z-index: 2;
@@ -235,6 +237,7 @@ i.fab:hover {
 @media only screen and (min-width: 900px) {
   .seccion1 {
     padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 .seccion1 .columna {
@@ -441,7 +444,8 @@ h6 {
   padding-right: 6.5rem;
   border: 1px solid black;
   transition: all 0.5s ease;
-  margin-top: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   color: #00A1BB;
   border-color: #D8D8D8;
 }
@@ -450,10 +454,20 @@ h6 {
   text-decoration: none;
   border-color: #D8D8D8;
 }
+@media only screen and (min-width: 900px) {
+  .contenedor-boton .button {
+    font-size: 20px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 3.25rem;
+    padding-right: 3.25rem;
+  }
+}
 
 .descargas {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 5rem;
 }
 .descargas .contenedor {
   padding-right: 2rem;
@@ -471,11 +485,11 @@ h6 {
     flex: 50%;
   }
   .descargas .contenedor:nth-child(1) {
-    padding-left: 12rem;
+    padding-left: 17vw;
     padding-top: 3rem;
   }
   .descargas .contenedor:nth-child(2) {
-    padding-right: 12rem;
+    padding-right: 17vw;
     padding-top: 3rem;
   }
 }
