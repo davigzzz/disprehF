@@ -555,6 +555,14 @@ h6 {
     padding-top: 3rem;
   }
 }
+.descargas .contenedor #flecha-descarga {
+  transform: translate(5vw, -5vw);
+  height: 3vw;
+  content: url("imagenes_nosotros/descarga.svg");
+}
+.descargas .contenedor a:hover #flecha-descarga {
+  content: url("imagenes_nosotros/descarga-azul.svg");
+}
 
 #alambre {
   width: 100%;
