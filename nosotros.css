@@ -362,6 +362,7 @@ p {
 .descargas {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 5rem;
 }
 .descargas .contenedor {
   padding-right: 2rem;
@@ -379,11 +380,11 @@ p {
     flex: 50%;
   }
   .descargas .contenedor:nth-child(1) {
-    padding-left: 12rem;
+    padding-left: 17vw;
     padding-top: 3rem;
   }
   .descargas .contenedor:nth-child(2) {
-    padding-right: 12rem;
+    padding-right: 17vw;
     padding-top: 3rem;
   }
 }
