@@ -29,6 +29,11 @@
   text-decoration: none;
   font-size: 17px;
 }
+@media only screen and (min-width: 1700px) {
+  .topnav a {
+    font-size: 27px;
+  }
+}
 .topnav a:hover {
   color: #00A1BB;
 }
@@ -200,6 +205,11 @@ i.fab:hover {
 @media only screen and (min-width: 900px) {
   .portada {
     margin-top: -126px;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .portada {
+    margin-top: -148px;
   }
 }
 .portada .texto {
@@ -392,8 +402,14 @@ h6 {
   }
 }
 .img-contenedor-xl .contenedor {
-  flex: 1 1 33%;
+  flex: 1 1 35%;
   background-color: #D8D8D8;
+}
+.img-contenedor-xl .contenedor:hover {
+  background-color: white;
+}
+.img-contenedor-xl .contenedor a {
+  text-decoration: none;
 }
 .img-contenedor-xl .contenedor .subcontenedor {
   display: flex;
@@ -403,13 +419,53 @@ h6 {
   width: 100%;
   border: 1px solid white;
   margin: 1px;
+  transition: all 0.5s ease;
+  filter: brightness(0.7);
+}
+.img-contenedor-xl .contenedor .subcontenedor:hover {
+  filter: brightness(1);
 }
 .img-contenedor-xl .contenedor .subcontenedor img {
   height: 20vw;
 }
+.img-contenedor-xl .contenedor .nombre {
+  transform: translate(40%, -386%);
+  /* background-color: #0275d8; */
+  font-size: 3rem;
+  color: #00A1BB;
+  text-align: center;
+}
+
+#alterno {
+  background-color: #BEBEBE;
+}
+#alterno:hover {
+  background-color: white;
+}
+
+#block2 {
+  height: 16.5vw;
+}
+
+#adoquin {
+  height: 15vw;
+}
+
+#adocreto {
+  height: 18vw;
+}
+
+#adopasto2 {
+  height: 16vw;
+}
+
+#poli {
+  height: 25vw;
+}
 
 #vigueta {
   width: 70%;
+  height: 15vw;
 }
 
 .vigueta {
@@ -417,11 +473,17 @@ h6 {
   justify-content: center;
   align-content: center;
   height: 20vw;
-  background-color: #D8D8D8;
+  background-color: white;
+  transition: all 0.5s ease;
+  filter: brightness(0.7);
+}
+.vigueta:hover {
+  filter: brightness(1);
 }
 @media only screen and (min-width: 900px) {
   .vigueta {
     display: flex;
+    align-items: center;
   }
 }
 
