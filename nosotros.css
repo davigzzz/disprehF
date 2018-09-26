@@ -34,7 +34,6 @@ body {
   display: flex;
   overflow: hidden;
   background-color: transparent;
-  height: 140px;
 }
 .topnav a {
   float: left;
@@ -289,6 +288,17 @@ p {
   .seccion1-xl .titulo {
     font-size: 19px;
     margin-top: 5rem;
+  }
+  .seccion1-xl .parallax {
+    background-image: url("imagenes_nosotros/ladrillo-Parallax.png");
+    /* Set a specific height */
+    min-height: 36vw;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 89vw;
+    display: block;
   }
 }
 
