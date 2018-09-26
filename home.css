@@ -455,6 +455,9 @@ h6 {
   background-image: url("imagenes_home/viguetaXL.png");
   background-size: 50vw;
 }
+.grid-container a:nth-child(6) .nombre {
+  width: 65%;
+}
 .grid-container .item2 {
   grid-column: 3;
   grid-row: 1/span 2;
