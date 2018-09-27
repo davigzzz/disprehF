@@ -391,6 +391,9 @@ p {
   padding-bottom: 3rem;
   padding-top: 2rem;
 }
+.descargas .contenedor #flecha-descarga {
+  display: none;
+}
 @media only screen and (min-width: 600px) {
   .descargas .contenedor {
     flex: 50%;
@@ -402,6 +405,34 @@ p {
   .descargas .contenedor:nth-child(2) {
     padding-right: 17vw;
     padding-top: 3rem;
+  }
+  .descargas .contenedor #flecha-descarga {
+    display: block;
+    transform: translate(5vw, -5vw);
+    height: 3vw;
+    content: url("imagenes_nosotros/descarga.svg");
+    transition: all 0.5s ease;
+  }
+}
+.descargas .contenedor a:hover #flecha-descarga {
+  content: url("imagenes_nosotros/descarga-azul.svg");
+}
+
+#catalogo {
+  content: url("imagenes_nosotros/catalogo-m.jpg");
+}
+@media only screen and (min-width: 600px) {
+  #catalogo {
+    content: url("imagenes_nosotros/catalogo.jpg");
+  }
+}
+
+#ficha {
+  content: url("imagenes_nosotros/ficha-m.jpg");
+}
+@media only screen and (min-width: 600px) {
+  #ficha {
+    content: url("imagenes_nosotros/ficha.jpg");
   }
 }
 
