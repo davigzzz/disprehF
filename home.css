@@ -29,7 +29,7 @@
   text-decoration: none;
   font-size: 17px;
 }
-@media only screen and (min-width: 1700px) {
+@media only screen and (min-width: 1500px) {
   .topnav a {
     font-size: 27px;
   }
@@ -207,7 +207,7 @@ i.fab:hover {
     margin-top: -126px;
   }
 }
-@media only screen and (min-width: 1700px) {
+@media only screen and (min-width: 1500px) {
   .portada {
     margin-top: -148px;
   }
@@ -331,8 +331,14 @@ h6 {
 .img-contenedor-movil .chico {
   flex: 50%;
   display: flex;
-  background-color: #D8D8D8;
+  background-color: white;
   flex-direction: column;
+}
+.img-contenedor-movil .chico:nth-child(1) .contenedor {
+  filter: brightness(0.5);
+}
+.img-contenedor-movil .chico:nth-child(5) .contenedor {
+  filter: brightness(0.5);
 }
 .img-contenedor-movil .grande {
   flex: 100%;
@@ -340,15 +346,17 @@ h6 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #D8D8D8;
+  background-color: white;
 }
 .img-contenedor-movil .contenedor {
-  border: 1.5px solid white;
   display: flex;
   justify-content: center;
   align-content: center;
   width: 99.5%;
   height: 99%;
+  margin: 1px;
+  background: white;
+  filter: brightness(0.7);
 }
 .img-contenedor-movil .contenedor a {
   text-align: center;
@@ -434,6 +442,10 @@ h6 {
 .grid-container a:nth-child(1) {
   background-image: url("imagenes_home/blockXL.png");
   background-size: 16.5vw;
+  filter: brightness(0.5);
+}
+.grid-container a:nth-child(1):hover {
+  filter: brightness(1);
 }
 .grid-container a:nth-child(2) {
   background-image: url("imagenes_home/adocretoXL.png");
@@ -442,6 +454,10 @@ h6 {
 .grid-container a:nth-child(3) {
   background-image: url("imagenes_home/poliestirenoXL.png");
   background-size: 20vw;
+  filter: brightness(0.5);
+}
+.grid-container a:nth-child(3):hover {
+  filter: brightness(1);
 }
 .grid-container a:nth-child(4) {
   background-image: url("imagenes_home/adoquinXL.png");
@@ -450,6 +466,10 @@ h6 {
 .grid-container a:nth-child(5) {
   background-image: url("imagenes_home/adopasto2XL.png");
   background-size: 18vw;
+  filter: brightness(0.5);
+}
+.grid-container a:nth-child(5):hover {
+  filter: brightness(1);
 }
 .grid-container a:nth-child(6) {
   background-image: url("imagenes_home/viguetaXL.png");
@@ -574,6 +594,9 @@ h6 {
   padding-bottom: 3rem;
   padding-top: 2rem;
 }
+.descargas .contenedor #flecha-descarga {
+  display: none;
+}
 @media only screen and (min-width: 600px) {
   .descargas .contenedor {
     flex: 50%;
@@ -586,14 +609,34 @@ h6 {
     padding-right: 17vw;
     padding-top: 3rem;
   }
-}
-.descargas .contenedor #flecha-descarga {
-  transform: translate(5vw, -5vw);
-  height: 3vw;
-  content: url("imagenes_nosotros/descarga.svg");
+  .descargas .contenedor #flecha-descarga {
+    display: block;
+    transform: translate(5vw, -5vw);
+    height: 3vw;
+    content: url("imagenes_nosotros/descarga.svg");
+    transition: all 0.5s ease;
+  }
 }
 .descargas .contenedor a:hover #flecha-descarga {
   content: url("imagenes_nosotros/descarga-azul.svg");
+}
+
+#catalogo {
+  content: url("imagenes_nosotros/catalogo-m.jpg");
+}
+@media only screen and (min-width: 600px) {
+  #catalogo {
+    content: url("imagenes_nosotros/catalogo.jpg");
+  }
+}
+
+#ficha {
+  content: url("imagenes_nosotros/ficha-m.jpg");
+}
+@media only screen and (min-width: 600px) {
+  #ficha {
+    content: url("imagenes_nosotros/ficha.jpg");
+  }
 }
 
 #alambre {

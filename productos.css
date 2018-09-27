@@ -29,6 +29,11 @@
   text-decoration: none;
   font-size: 17px;
 }
+@media only screen and (min-width: 1500px) {
+  .topnav a {
+    font-size: 27px;
+  }
+}
 .topnav a:hover {
   color: #00A1BB;
 }
@@ -184,7 +189,8 @@ i.fab:hover {
 @media only screen and (min-width: 600px) {
   .portada {
     background-image: url("imagenes_productos/portadaXL.png");
-    height: 54vw;
+    height: 53vw;
+    background-size: cover;
   }
 }
 .portada h1 {
