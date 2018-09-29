@@ -191,6 +191,7 @@ i.fab {
 }
 i.fab:hover {
   background: #929292;
+  color: white;
 }
 
 #portada {
