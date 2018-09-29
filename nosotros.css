@@ -106,7 +106,7 @@ body {
   }
 
   .logo {
-    width: 8rem;
+    width: 6rem;
     margin-top: 3rem;
     margin-left: 3rem;
     margin-bottom: 3rem;
@@ -116,6 +116,11 @@ body {
     padding-top: 1.65rem;
     padding-left: 0.7rem;
     padding-right: 0.7rem;
+  }
+}
+@media only screen and (min-width: 1100px) and (min-width: 1500px) {
+  .iconos a {
+    font-size: 20px;
   }
 }
 /* MENU Y SU ANIMACION */
@@ -255,7 +260,6 @@ p {
   margin-right: 5rem;
   margin-left: 2rem;
   font-family: gothamlight;
-  font-size: 14px;
   text-align: justify;
 }
 .seccion1 p:nth-child(4) {
@@ -275,20 +279,17 @@ p {
     display: block;
     margin-left: 4rem;
     margin-right: 4rem;
+    margin-bottom: 5rem;
   }
   .seccion1-xl b {
     font-family: Raleway;
   }
   .seccion1-xl p {
-    font-size: 14px;
-  }
-  .seccion1-xl p:nth-child(2) {
-    margin-bottom: 5rem;
-  }
-  .seccion1-xl p:nth-child(4) {
+    letter-spacing: 2px;
     margin-left: 10rem;
     margin-right: 10rem;
-    margin-top: 5rem;
+  }
+  .seccion1-xl p:nth-child(2) {
     margin-bottom: 5rem;
   }
   .seccion1-xl .titulo {
@@ -360,15 +361,29 @@ p {
 .seccion2 {
   font-family: gothamlight;
 }
+@media only screen and (min-width: 900px) {
+  .seccion2 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
 .seccion2 p {
   margin: 2rem;
-  font-size: 14px;
+  letter-spacing: 2px;
 }
 @media only screen and (min-width: 900px) {
   .seccion2 p {
     margin-right: 10rem;
     margin-left: 10rem;
     margin-top: 5rem;
+  }
+}
+.seccion2 p br {
+  display: none;
+}
+@media only screen and (min-width: 1300px) {
+  .seccion2 p br {
+    display: block;
   }
 }
 .seccion2 b {

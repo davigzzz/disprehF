@@ -156,6 +156,11 @@
     padding-right: 0.7rem;
   }
 }
+@media only screen and (min-width: 1100px) and (min-width: 1500px) {
+  .iconos a {
+    font-size: 20px;
+  }
+}
 /* MENU Y SU ANIMACION */
 .overlay {
   height: 100%;
@@ -296,7 +301,6 @@ i.fab:hover {
 @media only screen and (min-width: 600px) {
   .fila .columna2:nth-child(1) p {
     margin: 3rem;
-    letter-spacing: 3px;
   }
 }
 .fila .columna2 .contenedor-datos {
@@ -319,7 +323,6 @@ i.fab:hover {
   align-content: space-between;
   padding-top: 1rem;
   font-size: 0.9rem;
-  letter-spacing: 3px;
 }
 @media only screen and (min-width: 600px) {
   .fila .columna2 .contenedor-datos p {
@@ -421,7 +424,6 @@ i.fab:hover {
   .contactamos p {
     padding: 0;
     margin: 3rem;
-    letter-spacing: 3px;
   }
 }
 

@@ -72,7 +72,7 @@
 /* DIMENSIONES DEL LOGO Y MENU IPAD */
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .logo {
-    width: 8rem;
+    width: 6rem;
   }
 
   .btn-menu {
@@ -94,7 +94,7 @@
   }
 
   .logo {
-    width: 8rem;
+    width: 6rem;
     margin-top: 3rem;
     margin-left: 3rem;
   }
@@ -103,6 +103,11 @@
     padding-top: 1.65rem;
     padding-left: 0.7rem;
     padding-right: 0.7rem;
+  }
+}
+@media only screen and (min-width: 1100px) and (min-width: 1500px) {
+  .iconos a {
+    font-size: 20px;
   }
 }
 /* MENU Y SU ANIMACION  (ESTO ES LO QUE SE VE EN MOVIL)*/
@@ -323,7 +328,7 @@ h6 {
   flex-wrap: wrap;
   justify-content: center;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   .img-contenedor-movil {
     display: none;
   }
@@ -331,14 +336,7 @@ h6 {
 .img-contenedor-movil .chico {
   flex: 50%;
   display: flex;
-  background-color: white;
   flex-direction: column;
-}
-.img-contenedor-movil .chico:nth-child(1) .contenedor {
-  filter: brightness(0.5);
-}
-.img-contenedor-movil .chico:nth-child(5) .contenedor {
-  filter: brightness(0.5);
 }
 .img-contenedor-movil .grande {
   flex: 100%;
@@ -346,7 +344,6 @@ h6 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: white;
 }
 .img-contenedor-movil .contenedor {
   display: flex;
@@ -355,12 +352,11 @@ h6 {
   width: 99.5%;
   height: 99%;
   margin: 1px;
-  background: white;
-  filter: brightness(0.7);
+  border: 1px solid #D8D8D8;
 }
 .img-contenedor-movil .contenedor a {
   text-align: center;
-  color: black;
+  color: #989898;
 }
 .img-contenedor-movil img {
   padding: 2rem;
@@ -380,6 +376,7 @@ h6 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   margin-top: 3rem;
+  letter-spacing: 2px;
 }
 @media only screen and (min-width: 900px) {
   .img-contenedor-movil .button {
@@ -405,7 +402,7 @@ h6 {
   grid-auto-columns: 1fr;
   height: 50vw;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   .grid-container {
     display: grid;
   }
@@ -544,7 +541,7 @@ h6 {
   align-content: center;
   justify-content: center;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   .contenedor-boton {
     display: flex;
   }
