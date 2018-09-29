@@ -421,6 +421,10 @@ i.fab:hover {
 @media only screen and (min-width: 900px) {
   .vyb a:nth-child(2) {
     background-size: 45vw;
+    filter: brightness(0.5);
+  }
+  .vyb a:nth-child(2):hover {
+    filter: brightness(1);
   }
 }
 
@@ -443,6 +447,10 @@ i.fab:hover {
 @media only screen and (min-width: 900px) {
   .pe a:nth-child(3) {
     background-size: 45vw;
+    filter: brightness(0.5);
+  }
+  .pe a:nth-child(3):hover {
+    filter: brightness(1);
   }
 }
 
@@ -467,6 +475,14 @@ i.fab:hover {
 .block a:nth-child(1) {
   background-image: url("imagenes_productos/bloc1.png");
 }
+@media only screen and (min-width: 900px) {
+  .block a:nth-child(1) {
+    filter: brightness(0.5);
+  }
+  .block a:nth-child(1):hover {
+    filter: brightness(1);
+  }
+}
 .block a:nth-child(2) {
   background-image: url("imagenes_productos/bloc2.png");
   background-position-y: 19px;
@@ -480,6 +496,14 @@ i.fab:hover {
 }
 .block a:nth-child(3) {
   background-image: url("imagenes_productos/bloc3.png");
+}
+@media only screen and (min-width: 900px) {
+  .block a:nth-child(3) {
+    filter: brightness(0.5);
+  }
+  .block a:nth-child(3):hover {
+    filter: brightness(1);
+  }
 }
 .block a:nth-child(4) {
   background-image: url("imagenes_productos/bloc4.png");
@@ -518,6 +542,10 @@ i.fab:hover {
 @media only screen and (min-width: 900px) {
   .adocreto a:nth-child(2) {
     background-size: 15vw;
+    filter: brightness(0.5);
+  }
+  .adocreto a:nth-child(2):hover {
+    filter: brightness(1);
   }
 }
 .adocreto a:nth-child(3) {
@@ -532,6 +560,14 @@ i.fab:hover {
 .adocreto a:nth-child(4) {
   background-image: url("imagenes_productos/ado4.png");
 }
+@media only screen and (min-width: 900px) {
+  .adocreto a:nth-child(4) {
+    filter: brightness(0.5);
+  }
+  .adocreto a:nth-child(4):hover {
+    filter: brightness(1);
+  }
+}
 .adocreto a:nth-child(5) {
   background-image: url("imagenes_productos/ado5.png");
   background-position-y: 30px;
@@ -545,6 +581,14 @@ i.fab:hover {
 }
 .adocreto a:nth-child(6) {
   background-image: url("imagenes_productos/ado6.png");
+}
+@media only screen and (min-width: 900px) {
+  .adocreto a:nth-child(6) {
+    filter: brightness(0.5);
+  }
+  .adocreto a:nth-child(6):hover {
+    filter: brightness(1);
+  }
 }
 
 /* EMPIEZA FOOTER */
