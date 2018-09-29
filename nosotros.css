@@ -85,7 +85,7 @@ body {
 /* DIMENSIONES DEL LOGO Y MENU IPAD */
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .logo {
-    width: 8rem;
+    width: 6rem;
   }
 
   .btn-menu {
