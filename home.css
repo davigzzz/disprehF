@@ -654,7 +654,12 @@ h6 {
 
 #alambre {
   width: 100%;
-  content: url("imagenes_home/alambreXL.png");
+  content: url("imagenes_home/alambre.png");
+}
+@media only screen and (min-width: 600px) {
+  #alambre {
+    content: url("imagenes_home/alambreXL.png");
+  }
 }
 
 /* EMPIEZA FOOTER */
