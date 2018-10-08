@@ -479,7 +479,7 @@ h6 {
   filter: brightness(1);
 }
 .grid-container a:nth-child(6) {
-  background-image: url("imagenes_home/viguetaXL.png");
+  background-image: url("imagenes_home/vigueta.png");
   background-size: 50vw;
 }
 .grid-container a:nth-child(6) .nombre {
@@ -589,6 +589,12 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+@media only screen and (min-width: 600px) {
+  .descargas {
+    padding-top: 0rem;
+  }
 }
 .descargas .contenedor {
   padding-right: 2rem;
