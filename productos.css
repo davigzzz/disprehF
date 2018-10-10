@@ -276,11 +276,18 @@ i.fab:hover {
   font-family: Raleway;
   font-size: 1rem;
   text-align: center;
+  line-height: 1.5rem;
+}
+.nombres h3 br {
+  display: none;
 }
 @media only screen and (min-width: 900px) {
   .nombres h3 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
+  }
+  .nombres h3 br {
+    display: block;
   }
 }
 
