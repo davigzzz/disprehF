@@ -22,17 +22,12 @@
 
 .portada {
   height: 493px;
-  background-image: url("imagenes_contacto/portadaS.png");
+  background-image: url("imagenes_contacto/portadaS.jpg");
   background-size: cover;
 }
 @media only screen and (min-width: 600px) {
   .portada {
-    background-image: url("imagenes_contacto/portadaM.png");
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .portada {
-    background-image: url("imagenes_contacto/portadaL.png");
+    background-image: url("imagenes_contacto/portadaM.jpg");
   }
 }
 .portada .sub-portada {
@@ -47,7 +42,7 @@
 }
 @media only screen and (min-width: 600px) {
   .portada .sub-portada {
-    background-image: url("imagenes_contacto/cascosM.png");
+    background-image: url("imagenes_contacto/cascosM2.png");
     justify-content: flex-end;
   }
 }
@@ -266,7 +261,7 @@ i.fab:hover {
 }
 
 .portada-fondo {
-  background-image: url("imagenes_contacto/portadaL.png");
+  background-image: url("imagenes_contacto/portadaL.jpg");
   background-size: cover;
 }
 
@@ -523,6 +518,10 @@ i.fab:hover {
 }
 .fila3 .columna .terms span {
   font-family: gothamlight;
+}
+.fila3 .columna .terms i.fas {
+  color: white;
+  border: 1px black solid;
 }
 
 #manosML {
