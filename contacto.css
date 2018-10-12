@@ -42,7 +42,7 @@
 }
 @media only screen and (min-width: 600px) {
   .portada .sub-portada {
-    background-image: url("imagenes_contacto/cascosM2.png");
+    background-image: url("imagenes_contacto/cascosM.png");
     justify-content: flex-end;
   }
 }
