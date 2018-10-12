@@ -12,6 +12,10 @@
   font-family: gothamBook;
   src: url("fuentes/Gotham Book Regular.otf");
 }
+@font-face {
+  font-family: denser;
+  src: url("fuente/Dense-Regular.otf");
+}
 /* BARRA DE NAVEGACION */
 .topnav {
   font-family: oratorstd;
@@ -180,6 +184,7 @@ i.fab:hover {
 
 h1 {
   text-align: center;
+  font-family: denser;
 }
 
 @media only screen and (min-width: 700px) {
@@ -244,22 +249,20 @@ h1 {
 @media only screen and (min-width: 700px) {
   #fi1 {
     background-image: url("imagenes_prodint/fondobajo.png");
-    background-size: cover;
-    height: 29vw;
+    background-size: 100vw;
+    background-repeat: no-repeat;
   }
 }
 
-#fi2 {
-  padding-top: 5rem;
-}
 @media only screen and (min-width: 700px) {
   #fi2 {
-    padding-top: 13rem;
+    height: 30vw;
   }
 }
 @media only screen and (min-width: 1000px) {
   #fi2 {
     padding-top: 5rem;
+    height: 25vw;
   }
 }
 @media only screen and (min-width: 1500px) {
@@ -272,6 +275,7 @@ h1 {
   flex: 100%;
   padding-left: 2rem;
   padding-right: 4rem;
+  display: none;
 }
 .seccion1 p {
   font-family: gothamlight;
@@ -280,12 +284,14 @@ h1 {
   .seccion1 {
     flex: 50%;
     padding-right: 0rem;
+    display: block;
   }
 }
 
 .caracteristicas {
   flex: 100%;
   padding-left: 2rem;
+  padding-right: 2rem;
   font-family: gothamlight;
 }
 @media only screen and (min-width: 700px) {
@@ -301,10 +307,17 @@ h1 {
   align-items: center;
   justify-content: center;
   flex: 100%;
+  background-image: url("imagenes_prodint/dadocf.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  height: 50vw;
 }
 @media only screen and (min-width: 700px) {
   .ficha {
     flex: 50%;
+    height: auto;
   }
 }
 
@@ -313,6 +326,12 @@ h1 {
   flex-direction: column;
   align-items: center;
   flex: 100%;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 700px) {
+  .botones {
+    height: 30vw;
+  }
 }
 @media only screen and (min-width: 700px) {
   .botones {
@@ -320,26 +339,45 @@ h1 {
   }
 }
 .botones .boton {
-  background-color: #D8D8D8;
+  background-color: #008EA8;
   border: none;
   color: white;
   font-size: 14px;
   cursor: pointer;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  margin-top: 3rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
   transition: all 0.5s ease;
 }
+@media only screen and (min-width: 900px) {
+  .botones .boton {
+    font-size: 20px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
 .botones .boton:hover {
-  background-color: #00A1BB;
+  background-color: #D8D8D8;
   text-decoration: none;
   border-color: #D8D8D8;
+  color: black;
 }
 .botones .boton:nth-child(2) {
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 4.75rem;
+  padding-right: 4.75rem;
+  background-color: #D8D8D8;
+  color: black;
+}
+@media only screen and (min-width: 900px) {
+  .botones .boton:nth-child(2) {
+    padding-right: 5.35rem;
+    padding-left: 5.35rem;
+  }
+}
+.botones .boton:nth-child(2):hover {
+  background-color: #008EA8;
+  color: white;
 }
 
 #arr {
@@ -355,7 +393,7 @@ h4 {
 @media only screen and (min-width: 900px) {
   h4 {
     padding-top: 8rem;
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 }
 
@@ -382,7 +420,7 @@ h4 {
   justify-content: center;
   border: 1px solid white;
   margin: 1px;
-  height: 40vw;
+  height: 30vw;
 }
 @media only screen and (min-width: 900px) {
   .sugerencias .contenedor {
