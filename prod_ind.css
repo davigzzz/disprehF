@@ -14,7 +14,7 @@
 }
 @font-face {
   font-family: denser;
-  src: url("fuente/Dense-Regular.otf");
+  src: url("fuentes/Dense-Regular.otf");
 }
 /* BARRA DE NAVEGACION */
 .topnav {
@@ -185,6 +185,7 @@ i.fab:hover {
 h1 {
   text-align: center;
   font-family: denser;
+  letter-spacing: 2px;
 }
 
 @media only screen and (min-width: 700px) {
