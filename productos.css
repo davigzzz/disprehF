@@ -453,7 +453,7 @@ i.fab:hover {
   }
 }
 .pe a:nth-child(1) {
-  background-image: url("imagenes_productos/poli1.png");
+  background-image: url("imagenes_productos/poli1.jpg");
   background-size: 50vw;
 }
 @media only screen and (min-width: 900px) {
@@ -462,7 +462,7 @@ i.fab:hover {
   }
 }
 .pe a:nth-child(2) {
-  background-image: url("imagenes_productos/poli2.png");
+  background-image: url("imagenes_productos/poli2.jpg");
   background-size: 35vw;
 }
 @media only screen and (min-width: 900px) {
@@ -513,7 +513,7 @@ i.fab:hover {
   }
 }
 .block a:nth-child(1) {
-  background-image: url("imagenes_productos/bloc1.png");
+  background-image: url("imagenes_productos/bloc1.jpg");
 }
 @media only screen and (min-width: 900px) {
   .block a:nth-child(1) {
@@ -524,7 +524,7 @@ i.fab:hover {
   }
 }
 .block a:nth-child(2) {
-  background-image: url("imagenes_productos/bloc2.png");
+  background-image: url("imagenes_productos/bloc2.jpg");
   background-position-y: 19px;
   background-size: 29vw;
 }
@@ -535,7 +535,7 @@ i.fab:hover {
   }
 }
 .block a:nth-child(3) {
-  background-image: url("imagenes_productos/bloc3.png");
+  background-image: url("imagenes_productos/bloc3.jpg");
 }
 @media only screen and (min-width: 900px) {
   .block a:nth-child(3) {
@@ -546,7 +546,7 @@ i.fab:hover {
   }
 }
 .block a:nth-child(4) {
-  background-image: url("imagenes_productos/bloc4.png");
+  background-image: url("imagenes_productos/bloc4.jpg");
   background-size: 35vw;
 }
 @media only screen and (min-width: 900px) {
@@ -556,7 +556,7 @@ i.fab:hover {
   }
 }
 .block a:nth-child(5) {
-  background-image: url("imagenes_productos/bloc.png");
+  background-image: url("imagenes_productos/bloc5.jpg");
   background-size: 30vw;
   grid-column: span 2;
 }
@@ -583,10 +583,10 @@ i.fab:hover {
   }
 }
 .adocreto a:nth-child(1) {
-  background-image: url("imagenes_productos/ado1.png");
+  background-image: url("imagenes_productos/ado1.jpg");
 }
 .adocreto a:nth-child(2) {
-  background-image: url("imagenes_productos/ado2.png");
+  background-image: url("imagenes_productos/ado2.jpg");
   background-size: 20vw;
 }
 @media only screen and (min-width: 900px) {
@@ -599,7 +599,7 @@ i.fab:hover {
   }
 }
 .adocreto a:nth-child(3) {
-  background-image: url("imagenes_productos/ado3.png");
+  background-image: url("imagenes_productos/ado3.jpg");
   background-size: 20vw;
 }
 @media only screen and (min-width: 900px) {
@@ -608,7 +608,7 @@ i.fab:hover {
   }
 }
 .adocreto a:nth-child(4) {
-  background-image: url("imagenes_productos/ado4.png");
+  background-image: url("imagenes_productos/ado4.jpg");
 }
 @media only screen and (min-width: 900px) {
   .adocreto a:nth-child(4) {
@@ -619,7 +619,7 @@ i.fab:hover {
   }
 }
 .adocreto a:nth-child(5) {
-  background-image: url("imagenes_productos/ado5.png");
+  background-image: url("imagenes_productos/ado5.jpg");
   background-position-y: 30px;
   background-size: 35vw;
 }
@@ -630,7 +630,7 @@ i.fab:hover {
   }
 }
 .adocreto a:nth-child(6) {
-  background-image: url("imagenes_productos/ado6.png");
+  background-image: url("imagenes_productos/ado6.jpg");
 }
 @media only screen and (min-width: 900px) {
   .adocreto a:nth-child(6) {
