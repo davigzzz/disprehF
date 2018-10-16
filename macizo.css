@@ -224,7 +224,7 @@ h1 {
 }
 
 #img-adoquin {
-  height: 38vw;
+  height: 42vw;
   position: absolute;
   content: url("imagenes_prodint/macizo.png");
 }
@@ -392,51 +392,75 @@ h4 {
   padding-bottom: 3rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  display: none;
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
   h4 {
     padding-top: 8rem;
     font-size: 3.5vw;
+    display: block;
   }
-}
-
-.subcontenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  margin: 1px;
-}
-.subcontenedor img {
-  height: 20vw;
 }
 
 .sugerencias {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #D8D8D8;
-}
-.sugerencias .contenedor {
-  flex: 48%;
-  display: flex;
-  justify-content: center;
-  border: 1px solid white;
-  margin: 1px;
-  height: 30vw;
-}
-@media only screen and (min-width: 900px) {
-  .sugerencias .contenedor {
-    flex: 30.5%;
-  }
-}
-
-#cm {
   display: none;
 }
-@media only screen and (min-width: 900px) {
-  #cm {
-    display: block;
+@media only screen and (min-width: 600px) {
+  .sugerencias {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sugerencias .contenedor {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #D8D8D8;
+    margin: 1px;
+    height: 30vw;
+    flex: 30.5%;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    filter: brightness(0.7);
+  }
+  .sugerencias .contenedor:nth-child(1) {
+    background-size: 18vw;
+    background-repeat: no-repeat;
+    background-image: url("imagenes_productos/bloc3.jpg");
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+  .sugerencias .contenedor:nth-child(2) {
+    filter: brightness(0.5);
+    background-size: 28vw;
+    background-repeat: no-repeat;
+    background-image: url("imagenes_productos/ado6.jpg");
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+  .sugerencias .contenedor:nth-child(3) {
+    background-size: 28vw;
+    background-repeat: no-repeat;
+    background-image: url("imagenes_productos/ado4.jpg");
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+  .sugerencias .contenedor:hover {
+    filter: brightness(1);
+  }
+  .sugerencias .contenedor:hover .nombre {
+    opacity: 1;
+  }
+  .sugerencias .nombre {
+    opacity: 0;
+    transition: all 0.5s ease;
+    color: white;
+    background-color: rgba(168, 220, 231, 0.5);
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
   }
 }
 

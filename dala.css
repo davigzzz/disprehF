@@ -224,14 +224,14 @@ h1 {
 }
 
 #img-adoquin {
-  height: 36vw;
+  height: 42vw;
   position: absolute;
   content: url("imagenes_prodint/dala.png");
 }
 @media only screen and (min-width: 700px) {
   #img-adoquin {
     content: url("imagenes_prodint/dala.png");
-    height: 30vw;
+    height: 36vw;
     transform: translate(0, 5%);
   }
 }

@@ -224,15 +224,15 @@ h1 {
 }
 
 #img-adoquin {
-  height: 39vw;
+  height: 43vw;
   position: absolute;
   content: url("imagenes_prodint/adopasto.png");
 }
 @media only screen and (min-width: 700px) {
   #img-adoquin {
     content: url("imagenes_prodint/adopasto.png");
-    height: 38vw;
-    transform: translate(0, 5%);
+    height: 37vw;
+    transform: translate(0, -2%);
   }
 }
 

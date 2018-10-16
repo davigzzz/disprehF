@@ -231,8 +231,8 @@ h1 {
 @media only screen and (min-width: 700px) {
   #img-adoquin {
     content: url("imagenes_prodint/bovedilla-poli.png");
-    height: 30vw;
-    transform: translate(0, 5%);
+    height: 27vw;
+    transform: translate(0, -3%);
   }
 }
 
