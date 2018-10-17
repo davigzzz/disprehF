@@ -423,7 +423,7 @@ h4 {
     filter: brightness(0.7);
   }
   .sugerencias .contenedor:nth-child(1) {
-    background-size: 18vw;
+    background-size: 25vw;
     background-repeat: no-repeat;
     background-image: url("imagenes_productos/bloc3.jpg");
     background-position: center;
@@ -432,7 +432,7 @@ h4 {
   }
   .sugerencias .contenedor:nth-child(2) {
     filter: brightness(0.5);
-    background-size: 28vw;
+    background-size: 25vw;
     background-repeat: no-repeat;
     background-image: url("imagenes_productos/ado6.jpg");
     background-position: center;
@@ -440,7 +440,7 @@ h4 {
     align-items: center;
   }
   .sugerencias .contenedor:nth-child(3) {
-    background-size: 28vw;
+    background-size: 25vw;
     background-repeat: no-repeat;
     background-image: url("imagenes_productos/ado4.jpg");
     background-position: center;

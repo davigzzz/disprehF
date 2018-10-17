@@ -188,6 +188,12 @@ h1 {
   letter-spacing: 2px;
 }
 
+@media only screen and (max-width: 700px){
+  h1{
+    margin-bottom: -4rem;
+  }
+}
+
 @media only screen and (min-width: 700px) {
   #tm {
     display: none;
@@ -423,9 +429,9 @@ h4 {
     filter: brightness(0.7);
   }
   .sugerencias .contenedor:nth-child(1) {
-    background-size: 18vw;
+    background-size: 28vw;
     background-repeat: no-repeat;
-    background-image: url("imagenes_productos/ado3.jpg");
+    background-image: url("imagenes_productos/ado1.jpg");
     background-position: center;
     display: flex;
     align-items: center;
