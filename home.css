@@ -367,6 +367,9 @@ h6 {
 .img-contenedor-movil .contenedor a {
   text-align: center;
   color: #989898;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .img-contenedor-movil img {
   padding: 2rem;
