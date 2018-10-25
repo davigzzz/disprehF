@@ -229,14 +229,14 @@ h1 {
 }
 
 #img-adoquin {
-  height: 25vw;
+  height: 65vw;
   position: absolute;
   content: url("imagenes_prodint/bovedilla.png");
 }
 @media only screen and (min-width: 700px) {
   #img-adoquin {
     content: url("imagenes_prodint/bovedilla.png");
-    height: 25vw;
+    height: 65vw;
     transform: translate(0, 5%);
   }
 }
