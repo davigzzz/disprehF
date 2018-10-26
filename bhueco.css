@@ -398,6 +398,27 @@ h1 {
   padding-top: 0rem;
 }
 
+h3{
+  font-size: 20px;
+  font-family: oratorstd;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#colores-xl{
+  display: none;
+}
+@media only screen and (min-width: 700px){
+  #colores-movil{
+    display: none;
+  }
+  #colores-xl{
+    display: block;
+  }
+}
+
 h4 {
   font-family: oratorstd;
   text-align: center;
