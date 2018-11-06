@@ -362,11 +362,18 @@ h1 {
   background-position: center;
   justify-content: center;
   height: 50vw;
+  margin: 3rem;
+}
+
+.ficha:nth-child(2){
+  background-image: url("imagenes_prodint/proceso.jpg");
 }
 @media only screen and (min-width: 700px) {
   .ficha {
-    flex: 50%;
+    flex: 25%;
     height: auto;
+    background-size: 25vw;
+    margin: 0;
   }
 }
 
@@ -384,7 +391,7 @@ h1 {
 }
 @media only screen and (min-width: 700px) {
   .botones {
-    flex: 50%;
+    flex: 35%;
   }
 }
 .botones .boton {
