@@ -236,8 +236,8 @@ h1 {
 @media only screen and (min-width: 700px) {
   #img-adoquin {
     content: url("imagenes_prodint/separador.png");
-    height: 34vw;
-    transform: translate(0, 5%);
+    height: 26vw;
+    transform: translate(0, -4%);
   }
 }
 
@@ -274,6 +274,30 @@ h1 {
 @media only screen and (min-width: 1500px) {
   #fi2 {
     padding-left: 0rem;
+  }
+}
+
+#flecha-descarga{
+  display: block;
+    transform: translate(-23vw, 14.5vw);
+    height: 2rem;
+    content: url(imagenes_nosotros/descarga.svg);
+    transition: all 0.5s ease;
+}
+#flecha-descarga:hover{
+  content: url("imagenes_nosotros/descarga-azul.svg")
+}
+@media only screen and (min-width: 700px){
+  #flecha-descarga{
+      transform: translate(-12vw, 7.5vw);
+      height: 2rem;
+  }
+}
+@media only screen and (min-width: 1000px){
+  #flecha-descarga{
+      transform: translate(-9vw, 5.5vw);
+      height: 3vw;
+      
   }
 }
 
